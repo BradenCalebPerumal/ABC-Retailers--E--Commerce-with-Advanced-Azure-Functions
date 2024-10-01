@@ -1,0 +1,139 @@
+﻿@model CLDV6211_ST10287165_POE_P1.Models.Admin
+
+@{
+    ViewData["Title"] = "Admin Details";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: #fff;
+            color: #333;
+        }
+
+        .header {
+            background-color: #283593;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+            font-size: 24px;
+        }
+
+        .container {
+            width: 70%;
+            margin: 20px auto;
+            background-color: #f9f9f9;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+            .form-group label {
+                display: block;
+                margin-bottom: 5px;
+                font-weight: bold;
+            }
+
+        .form-control {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .btn-primary {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+            border: none;
+        }
+
+            .btn-primary:hover {
+                background-color: #45a049;
+            }
+
+        .btn-secondary {
+            background-color: #6c757d;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+            border: none;
+        }
+
+            .btn-secondary:hover {
+                background-color: #5a6268;
+            }
+
+        .back-to-list {
+            margin-top: 20px;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 10px 20px;
+            background-color: #283593;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">Admin Details</div>
+
+    <div class="container">
+        <h4>Admin</h4>
+        <hr />
+        <dl class="row">
+            <dt class="col-sm-2">
+                Username:
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.AdminEmail)
+            </dd>
+            <dt class="col-sm-2">
+                Password:
+            </dt>
+            <dd class="col-sm-10">
+                @Model.AdminPassword
+            </dd>
+        </dl>
+    </div>
+
+    <div class="container">
+        <div class="form-group">
+            <a asp-action="Edit" asp-route-id="@Model?.AdminID" class="btn btn-primary">Edit</a>
+            <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+        </div>
+    </div>
+
+   
+
+    @section Scripts {
+        @{
+            await Html.RenderPartialAsync("_ValidationScriptsPartial");
+        }
+    }
+</body>
+</html>

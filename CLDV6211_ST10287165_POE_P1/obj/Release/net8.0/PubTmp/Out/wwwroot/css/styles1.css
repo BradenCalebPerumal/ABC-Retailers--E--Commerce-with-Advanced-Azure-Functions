@@ -1,0 +1,130 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #fff;
+    color: #333;
+}
+
+.header {
+    background-color: #283593;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.container {
+    width: 70%;
+    margin: 20px auto;
+    background-color: #f9f9f9;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+    .form-group label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.btn-primary {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+}
+
+    .btn-primary:hover {
+        background-color: #45a049;
+    }
+
+.back-to-list {
+    margin-top: 20px;
+    display: inline-block;
+}
+
+    .back-to-list a {
+        color: #283593;
+        text-decoration: none;
+    }
+
+        .back-to-list a:hover {
+            text-decoration: underline;
+        }
+
+.text-danger {
+    color: #ff0000;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px 20px;
+    background-color: #283593;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Animation Styles */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.loader {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    border: 8px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top-color: #4CAF50;
+    -webkit-animation: spin 1s ease-in-out infinite;
+    animation: spin 1s ease-in-out infinite;
+}
+
+@-webkit-keyframes spin {
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.success-message {
+    display: none;
+    text-align: center;
+    color: #4CAF50;
+    font-size: 24px;
+}
+}

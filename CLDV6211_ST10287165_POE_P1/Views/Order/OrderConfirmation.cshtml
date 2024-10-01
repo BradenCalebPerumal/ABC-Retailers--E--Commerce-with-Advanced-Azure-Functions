@@ -1,0 +1,14 @@
+﻿@{
+    ViewData["Title"] = "Order Confirmation";
+}
+
+<h2>Order Confirmation</h2>
+
+@if (ViewBag.OrderMessage != null)
+{
+    <p>@ViewBag.OrderMessage</p>
+}
+else
+{
+    <p>Order details not found.</p>
+}

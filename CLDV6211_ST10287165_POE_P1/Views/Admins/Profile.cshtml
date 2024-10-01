@@ -1,0 +1,104 @@
+﻿@model CLDV6211_ST10287165_POE_P1.Models.Admin
+
+@{
+    ViewData["Title"] = "Edit Profile";
+}
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f4f4f9;
+    }
+
+    .edit-profile-container {
+        max-width: 600px;
+        margin: 40px auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+    }
+
+        .edit-profile-container h1 {
+            text-align: center;
+            color: #0056b3;
+        }
+
+        .edit-profile-container .form-group {
+            margin-bottom: 15px;
+        }
+
+        .edit-profile-container label {
+            color: #333;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .edit-profile-container input[type="email"],
+        .edit-profile-container input[type="password"],
+        .edit-profile-container input[type="text"],
+        .edit-profile-container .form-control {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .edit-profile-container .btn-primary {
+            background-color: #004494;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+            .edit-profile-container .btn-primary:hover {
+                background-color: #003073;
+            }
+
+        .edit-profile-container a {
+            text-decoration: none;
+            color: #0056b3;
+        }
+
+    .header {
+        background-color: #283593;
+        color: #fff;
+        padding: 10px 20px;
+        text-align: center;
+        font-size: 24px;
+    }
+</style>
+
+<div class="header">Admin Profile</div>
+
+<div class="edit-profile-container">
+    <form asp-action="Edit" asp-controller="Admins" method="post">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <input type="hidden" asp-for="RowKey" />
+        <input type="hidden" asp-for="PartitionKey" />
+
+        <div class="form-group">
+            <label asp-for="AdminEmail" class="control-label">Email</label>
+            <input asp-for="AdminEmail" class="form-control" readonly /> <!-- Email is readonly -->
+            <span asp-validation-for="AdminEmail" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="AdminPassword" class="control-label">Password</label>
+            <input asp-for="AdminPassword" class="form-control" type="text" />
+            <span asp-validation-for="AdminPassword" class="text-danger"></span>
+        </div>
+
+   
+
+        <div class="form-group">
+            <a asp-action="Edit" asp-route-id="@Model.RowKey" class="button">Edit</a>
+        </div>
+    </form>
+</div>
+
+<div>
+    <a href="@Url.Action("Index", "Admins")">View Admin Details</a>
+</div>

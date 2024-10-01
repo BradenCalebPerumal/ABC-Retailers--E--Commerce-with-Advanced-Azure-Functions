@@ -1,0 +1,155 @@
+﻿@model CLDV6211_ST10287165_POE_P1.Models.Product
+
+@{
+    ViewData["Title"] = "Edit Product";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .create-container {
+            background: #e8f0fe; /* Light blue background */
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 600px;
+            margin: auto;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .create-title {
+            color: #204a87; /* Deep blue for the title */
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #c6d9f1; /* Soft blue border for input fields */
+            border-radius: 4px;
+        }
+
+        .btn-primary {
+            background-color: darkblue; /* Strong blue for the button */
+            border: none;
+            padding: 10px 20px;
+            color: white;
+            display: block;
+            width: 100%;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .img-preview {
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .message {
+            text-align: center;
+            color: #3266a8; /* Medium blue for message */
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="create-container">
+        <h1 class="create-title">Edit Product</h1>
+        @if (Context.Session.GetString("IsClientLoggedIn") == "true")
+        {
+            <form asp-action="Edit" method="post" enctype="multipart/form-data">
+                <input type="hidden" name="PartitionKey" value="@Model.PartitionKey" />
+
+                <input type="hidden" name="RowKey" value="@Model.RowKey" />
+
+                <!-- Hidden field for RowKey -->
+                <input type="hidden" name="RowKey" value="@Model.RowKey" />
+                <input type="hidden" name="PartitionKey" value="@Model.PartitionKey" />
+                <input type="hidden" name="ClientId" value="@Model.ClientId" />
+
+                <div class="form-group">
+                    <img src="@Model.ImageUrl" alt="Current Image" class="img-preview">
+                </div>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="Name" value="@Model.Name" required class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label for="description">Description:</label>
+                    <textarea id="description" name="Description" required class="form-control">@Model.Description</textarea>
+                </div>
+                <div class="form-group">
+                    <label for="price">Price:</label>
+                    <input type="number" id="price" name="Price" step="0.01" value="@Model.Price" required class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label for="category">Category:</label>
+                    <input type="text" id="category" name="Category" value="@Model.Category" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label for="instock">In Stock:</label>
+                    <select id="instock" name="InStock" required class="form-control">
+                        <option value="In Stock">In Stock</option>
+                        <option value="Out of Stock">Out of Stock</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="imageType">Image Type:</label>
+                    <select id="imageType" name="ImageType" required class="form-control" onchange="toggleImageInput(this.value)">
+                        <option value="URL">URL</option>
+                        <option value="Upload">Upload</option>
+                    </select>
+                </div>
+                <div class="form-group" id="urlInput" style="display:@(Model.ImageType == "URL" ? "block" : "none");">
+                    <label for="imageUrl">Image URL:</label>
+                    <input type="text" id="imageUrl" name="ImageUrl" value="@(Model.ImageType == "URL" ? Model.ImageUrl : "")" class="form-control" />
+                </div>
+                <div class="form-group" id="uploadInput" style="display:@(Model.ImageType == "Upload" ? "block" : "none");">
+                    <label for="imageUpload">Upload Image:</label>
+                    <input type="file" id="imageUpload" name="ImageFile" class="form-control" />
+                </div>
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        }
+        else
+        {
+            <p class="message">Only clients can edit products. <a asp-action="Login" asp-controller="Clients">Login here</a> as a client.</p>
+        }
+    </div>
+
+    @section Scripts {
+        <script>
+            function toggleImageInput(value) {
+                var urlInput = document.getElementById('urlInput');
+                var uploadInput = document.getElementById('uploadInput');
+                if (value === 'URL') {
+                    urlInput.style.display = 'block';
+                    uploadInput.style.display = 'none';
+                    document.getElementById('imageUpload').value = ''; // Clear the file input
+                } else if (value === 'Upload') {
+                    urlInput.style.display = 'none';
+                    uploadInput.style.display = 'block';
+                    document.getElementById('imageUrl').value = ''; // Clear the URL input
+                } else {
+                    urlInput.style.display = 'none';
+                    uploadInput.style.display = 'none';
+                }
+            }
+
+            // Initialize visibility based on the current selection
+            document.addEventListener("DOMContentLoaded", function () {
+                var imageTypeSelector = document.getElementById('imageType');
+                toggleImageInput(imageTypeSelector.value);
+            });
+        </script>
+    }
+</body>
+</html>

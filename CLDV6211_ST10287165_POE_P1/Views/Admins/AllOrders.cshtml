@@ -1,0 +1,126 @@
+﻿@model IEnumerable<CLDV6211_ST10287165_POE_P1.Models.Order>
+
+@{
+    ViewData["Title"] = "All Orders";
+}
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+    .table {
+        margin-top: 20px;
+    }
+
+        .table thead th {
+            background-color: darkturquoise; /* Header background color */
+            color: black; /* Header text color */
+        }
+
+    .order-row {
+        background-color: #e0f7fa; /* Light background for order rows */
+    }
+
+    .order-status {
+        font-weight: bold; /* Bold text for status */
+        border: 1px solid #c6d9f1; /* Border matching theme */
+        border-radius: 4px; /* Rounded corners for dropdowns */
+        width: 150px; /* Consistent width */
+    }
+
+    .btn-primary {
+        background-color: #00ced1; /* Turquoise */
+        border: none;
+        padding: 5px 10px;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+        .btn-primary:hover {
+            background-color: #008b8b; /* Darker turquoise on hover */
+            color: black;
+        }
+
+    h2 {
+        color: #1a1a1a; /* Heading color */
+        text-shadow: 0 0 5px #00ffcc; /* Glowing effect for heading */
+        margin-bottom: 20px; /* Space below heading */
+        font-size: 30px; /* Larger heading font size */
+    }
+</style>
+
+<h2>All Orders</h2>
+
+@if (Model.Any())
+{
+    <div class="table-responsive">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Order ID</th>
+                    <th>Customer Email</th>
+                    <th>Order Date</th>
+                    <th>Total Amount</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var order in Model)
+                {
+                    <tr class="order-row" data-order-status="@order.OrderStatus">
+                        <td>@order.RowKey</td>
+                        <td>@order.CustEmail</td>
+                        <td>@order.OrderDate.ToString("yyyy-MM-dd")</td>
+                        <td>@order.TotalAmount.ToString("C")</td>
+                        <td>
+                            <input type="hidden" name="orderId" value="@order.RowKey" />
+                            <select name="newStatus" class="form-control order-status" data-order-id="@order.RowKey">
+                                <option value="" disabled selected>@order.OrderStatus</option>
+                                <option value="Pending">Pending</option>
+                                <option value="Processed">Processed</option>
+                                <option value="Shipped">Shipped</option>
+                                <option value="Delivered">Delivered</option>
+                                <option value="Cancelled">Cancelled</option>
+                            </select>
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-primary update-status" data-order-id="@order.RowKey">Update</button>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+}
+else
+{
+    <p class="alert alert-warning">No orders found.</p>
+}
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+        // Handle the status update button click
+        $('.update-status').click(function () {
+            var orderId = $(this).data('order-id');
+            var newStatus = $(this).closest('tr').find('.order-status').val();
+
+            $.ajax({
+                url: '@Url.Action("UpdateOrderStatus", "Admins")', // Ensure this URL matches your controller and action
+                type: 'POST',
+                data: {
+                    orderId: orderId,
+                    newStatus: newStatus
+                },
+                success: function (response) {
+                    alert('Order status updated successfully.');
+                },
+                error: function (xhr, status, error) {
+                    alert('Failed to update order status. Please try again.');
+                    console.error(error);
+                }
+            });
+        });
+    });
+</script>

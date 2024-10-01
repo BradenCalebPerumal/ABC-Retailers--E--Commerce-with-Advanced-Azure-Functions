@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="CLDV6211ST10287165POEP120241001175648" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\Caleb\\OneDrive\ -\ DLSSA\\Documents\\cldv6212-part-1-CalebPerumal28\\POE\ P1-ST10287165\\CLDV6211_ST10287165_POE_P1\\obj\\Release\\net8\.0\\PubTmp\\Out\\$" />
+  </parameter>
+</parameters>

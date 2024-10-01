@@ -1,0 +1,62 @@
+﻿@model CLDV6211_ST10287165_POE_P1.Models.Order
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Order Details</title>
+    <link rel="stylesheet" type="text/css" href="~/css/style.css"> <!-- Make sure to link your CSS -->
+</head>
+<body>
+    <div>
+        <h2>Order Details</h2>
+        <hr />
+        <dl class="row">
+            <dt class="col-sm-2">
+                Order ID
+            </dt>
+            <dd class="col-sm-10">
+                @Model.RowKey <!-- RowKey represents the OrderId in Azure Table Storage -->
+            </dd>
+            <dt class="col-sm-2">
+                Order Date
+            </dt>
+            <dd class="col-sm-10">
+                @Model.OrderDate.ToString("d")
+            </dd>
+            <dt class="col-sm-2">
+                Status
+            </dt>
+            <dd class="col-sm-10">
+                @Model.OrderStatus
+            </dd>
+        </dl>
+
+        <h3>Items</h3>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th>Price per Unit</th>
+                    <th>Total Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in ViewBag.OrderDetails)
+                {
+                    <tr>
+                        <td>@item.ProductName</td> <!-- Directly using ProductName from OrderDetail -->
+                        <td>@item.Quantity</td>
+                        <td>@String.Format("{0:C}", item.Price)</td>
+                        <td>@String.Format("{0:C}", item.Quantity * item.Price)</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+        <div>
+            <strong>Total:</strong> @String.Format("{0:C}", ((IEnumerable<CLDV6211_ST10287165_POE_P1.Models.OrderDetail>)ViewBag.OrderDetails).Sum(i => i.Price * i.Quantity))
+        </div>
+        <a href="@Url.Action("CustOrders", "Orders")" class="btn btn-default">Back to Orders</a>
+    </div>
+</body>
+</html>

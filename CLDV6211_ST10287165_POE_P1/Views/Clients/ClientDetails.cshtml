@@ -1,0 +1,119 @@
+﻿@model CLDV6211_ST10287165_POE_P1.Models.Client
+
+@{
+    ViewData["Title"] = "Client Details";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: #fff;
+            color: #333;
+        }
+
+        .header {
+            background-color: #283593;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+            font-size: 24px;
+        }
+
+        .container {
+            width: 70%;
+            margin: 20px auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .field {
+            margin-bottom: 15px;
+        }
+
+            .field label {
+                font-weight: bold;
+                display: block;
+                margin-bottom: 5px;
+            }
+
+        .footer {
+            text-align: center;
+            padding: 10px 20px;
+            background-color: #283593;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .back-to-list {
+            margin-top: 20px;
+            text-align: right;
+        }
+
+            .back-to-list a {
+                background-color: #4CAF50;
+                color: white;
+                padding: 10px 20px;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                border-radius: 5px;
+            }
+
+                .back-to-list a:hover {
+                    background-color: #45a049;
+                }
+    </style>
+</head>
+<body>
+    <div class="header">Client Details</div>
+
+    <div class="container">
+        <div class="field">
+            <label>First Name</label>
+            <span>@Model.ClientFirstName</span>
+        </div>
+
+        <div class="field">
+            <label>Last Name</label>
+            <span>@Model.LastName</span>
+        </div>
+
+        <div class="field">
+            <label>Email</label>
+            <span>@Model.Email</span>
+        </div>
+
+        <div class="field">
+            <label>Username</label>
+            <span>@Model.Username</span>
+        </div>
+
+        <div class="field">
+            <label>Identity Number</label>
+            <span>@Model.IdentityNum</span>
+        </div>
+
+        <div class="field">
+            <label>Password</label>
+            <span>@Model.Password</span> <!-- You may choose to mask or show this based on your requirements -->
+        </div>
+
+        <div class="field">
+            <label>Cell Number</label>
+            <span>@Model.CellNum</span>
+        </div>
+
+        <div class="back-to-list">
+            <a asp-action="Index">Back to List</a>
+        </div>
+    </div>
+
+    <div class="footer">Thank you for being our client!</div>
+</body>
+</html>

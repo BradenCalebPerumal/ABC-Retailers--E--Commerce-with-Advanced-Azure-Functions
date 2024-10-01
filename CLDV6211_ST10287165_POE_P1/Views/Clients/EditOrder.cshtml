@@ -1,0 +1,27 @@
+﻿@model CLDV6211_ST10287165_POE_P1.Models.Order
+
+@{
+    ViewData["Title"] = "Edit Order";
+}
+
+<h1>Edit Order</h1>
+
+<form asp-action="EditOrder" method="post">
+    <input type="hidden" asp-for="RowKey" />
+
+    <div class="form-group">
+        <label asp-for="OrderStatus" class="control-label">Order Status</label>
+        <select asp-for="OrderStatus" class="form-control">
+            <option> value="Pending" @(Model.OrderStatus == "Pending")>Pending</option>
+            <option> value="Processed" @(Model.OrderStatus == "Processed" ? "selected" : "")>Processed</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <input type="submit" value="Save" class="btn btn-primary" />
+    </div>
+</form>
+
+<div>
+    <a asp-action="CustOrder">Back to List</a>
+</div>

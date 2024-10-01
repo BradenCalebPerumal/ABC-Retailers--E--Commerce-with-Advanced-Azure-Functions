@@ -1,0 +1,144 @@
+﻿@model CLDV6211_ST10287165_POE_P1.Models.CheckoutViewModel
+
+@{
+    ViewData["Title"] = "Checkout";
+}
+
+<h2 class="checkout-title">Checkout</h2>
+
+<form asp-controller="Order" asp-action="PlaceOrder" method="post" class="form-horizontal checkout-form" role="form">
+    <div class="form-group">
+        <label asp-for="Order.ShippingAddress" class="control-label col-md-2">Shipping Address</label>
+        <div class="col-md-10">
+            <input asp-for="Order.ShippingAddress" class="form-control themed-input" />
+            <span asp-validation-for="Order.ShippingAddress" class="text-danger"></span>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Order.CustEmail" class="control-label col-md-2">Email</label>
+        <div class="col-md-10">
+            <input asp-for="Order.CustEmail" class="form-control themed-input" readonly /> <!-- Set to readonly as it's not meant to be changed -->
+            <span asp-validation-for="Order.CustEmail" class="text-danger"></span>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Order.PaymentMethod" class="control-label col-md-2">Payment Method</label>
+        <div class="col-md-10">
+            <select asp-for="Order.PaymentMethod" class="form-control themed-input">
+                <option value="COD" selected>Cash on Delivery</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- Hidden Order Status -->
+    <input asp-for="Order.OrderStatus" type="hidden" value="Pending" /> <!-- Default value as 'Pending' -->
+
+    <h3 class="summary-title">Order Summary</h3>
+    <ul class="order-summary">
+        @for (int i = 0; i < Model.CartItems.Count; i++)
+        {
+            <li>
+                @Model.CartItems[i].ProductName - Quantity: @Model.CartItems[i].Quantity - Price: @String.Format("{0:C}", Model.CartItems[i].Price)
+                <input type="hidden" asp-for="@Model.CartItems[i].ProductId" />
+                <input type="hidden" asp-for="@Model.CartItems[i].ProductName" />
+                <input type="hidden" asp-for="@Model.CartItems[i].Quantity" />
+                <input type="hidden" asp-for="@Model.CartItems[i].Price" />
+            </li>
+        }
+    </ul>
+
+    <p class="total-amount"><strong>Total: @String.Format("{0:C}", Model.Order.TotalAmount)</strong></p>
+    <input type="hidden" asp-for="Order.PartitionKey" />
+    <input type="hidden" asp-for="Order.TotalAmount" />
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Place Order" class="btn btn-primary themed-button" />
+        </div>
+    </div>
+</form>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+
+<style>
+    .checkout-title {
+        color: #1a1a1a;
+        text-shadow: 0 0 5px #00ffcc;
+        margin-bottom: 20px;
+    }
+
+    .checkout-form {
+        background: rgba(255, 255, 255, 0.9);
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 8px 16px rgba(0, 255, 255, 0.2);
+        border: 1px solid #00ffcc;
+        margin: 0 auto;
+        max-width: 1500px;
+    }
+
+    .form-group label {
+        color: black;
+        font-weight: bold;
+        text-shadow: 0 0 2px #00ffcc;
+        margin-bottom: 5px;
+    }
+
+    .themed-input {
+        border: 2px solid #00ffcc;
+        border-radius: 4px;
+        background-color: transparent;
+        color: black;
+        transition: border 0.3s;
+    }
+
+        .themed-input:focus {
+            border-color: #1affff;
+            box-shadow: 0 0 8px #00ffcc;
+        }
+
+    .summary-title {
+        color: #1a1a1a;
+        text-shadow: 0 0 5px #00ffcc;
+        margin-top: 20px;
+    }
+
+    .order-summary {
+        list-style: none;
+        padding: 0;
+        margin: 20px 0;
+    }
+
+        .order-summary li {
+            margin-bottom: 10px;
+            color: black;
+        }
+
+    .total-amount {
+        font-size: 18px;
+        color: black;
+        margin-top: 20px;
+        text-shadow: 0 0 5px #00ffcc;
+    }
+
+    .themed-button {
+        background-color: #00ffcc;
+        border: none;
+        padding: 10px 20px;
+        color: black;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+        .themed-button:hover {
+            background-color: blue;
+            box-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc;
+        }
+</style>

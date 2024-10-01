@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34616.47
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CLDV6211_ST10287165_POE_P1", "CLDV6211_ST10287165_POE_P1\CLDV6211_ST10287165_POE_P1.csproj", "{A12BE980-8ED0-4336-84AF-49D3C9346834}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunctionApp2", "FunctionApp2\FunctionApp2.csproj", "{886FF667-57CD-45CD-BD62-B81013D982A0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A12BE980-8ED0-4336-84AF-49D3C9346834}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A12BE980-8ED0-4336-84AF-49D3C9346834}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A12BE980-8ED0-4336-84AF-49D3C9346834}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A12BE980-8ED0-4336-84AF-49D3C9346834}.Release|Any CPU.Build.0 = Release|Any CPU
+		{886FF667-57CD-45CD-BD62-B81013D982A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{886FF667-57CD-45CD-BD62-B81013D982A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{886FF667-57CD-45CD-BD62-B81013D982A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{886FF667-57CD-45CD-BD62-B81013D982A0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6E7AAE77-6496-4520-8DD7-881789893477}
+	EndGlobalSection
+EndGlobal

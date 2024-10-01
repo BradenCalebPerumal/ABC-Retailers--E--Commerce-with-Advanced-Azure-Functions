@@ -1,0 +1,226 @@
+﻿@model CLDV6211_ST10287165_POE_P1.Models.Client
+
+@{
+    ViewData["Title"] = "Edit Client";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="~/css/styles1.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: #0056b3; /* Dark blue */
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 24px;
+            font-weight:semi-bold;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            color: White; /* Change the color to suit your theme */
+            text-shadow: 0 0 5px turquoise; /* Glowing effect */
+        }
+
+        .container {
+            background: #ffffff;
+            padding: 60px;
+            border-radius: 8px;
+            max-width: 1000px;
+            margin: auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow-y: auto; /* Enable vertical scrolling */
+        }
+
+        .form-group label {
+            font-weight: bold;
+            color: #204a87; /* Dark blue shade for labels */
+        }
+
+        .form-control {
+            border: 1px solid #c6d9f1;
+            border-radius: 4px;
+            padding: 10px;
+            font-size: 14px;
+            background-color: #f8f9fa; /* Light gray background for inputs */
+        }
+
+        .btn-primary {
+            background-color: #00ced1; /* Turquoise */
+            border: none;
+            padding: 10px 20px;
+            color: white;
+            width: 100%;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .btn-primary:hover {
+            background-color: #008b8b; /* Darker turquoise */
+        }
+
+        .back-to-list a {
+            color: #0056b3; /* Dark blue */
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .back-to-list a:hover {
+            text-decoration: underline;
+        }
+
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .loader {
+            border: 6px solid #f3f3f3;
+            border-radius: 50%;
+            border-top: 6px solid #00ced1; /* Turquoise spinner */
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+        }
+
+        keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .success-message {
+            display: none;
+            position: fixed;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #00ced1; /* Turquoise */
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            z-index: 1001;
+        }
+
+        .success-message i {
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">Edit Client</div>
+
+    <div class="container">
+        <h4>Client</h4>
+        <hr />
+        <div class="row">
+            <div class="col-md-4">
+                <form id="edit-form" asp-action="Edit" method="post" onsubmit="showLoadingAnimation(event)">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <input type="hidden" asp-for="RowKey" />
+                    <input type="hidden" asp-for="PartitionKey" />
+
+                    <div class="form-group">
+                        <label asp-for="ClientFirstName" class="control-label">First Name</label>
+                        <input asp-for="ClientFirstName" class="form-control" readonly />
+                        <span asp-validation-for="ClientFirstName" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="LastName" class="control-label">Last Name</label>
+                        <input asp-for="LastName" class="form-control" readonly />
+                        <span asp-validation-for="LastName" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="IdentityNum" class="control-label">Identity Number</label>
+                        <input asp-for="IdentityNum" class="form-control" readonly />
+                        <span asp-validation-for="IdentityNum" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="Email" class="control-label">Email Address</label>
+                        <input asp-for="Email" class="form-control" readonly />
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="Username" class="control-label">Username</label>
+                        <input asp-for="Username" class="form-control" readonly />
+                        <span asp-validation-for="Username" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="Password" class="control-label">New Password</label>
+                        <input asp-for="Password" class="form-control" type="password" />
+                        <span asp-validation-for="Password" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="CellNum" class="control-label">Cell Number</label>
+                        <input asp-for="CellNum" class="form-control" />
+                        <span asp-validation-for="CellNum" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="submit" value="Save" class="btn btn-primary" />
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="back-to-list">
+            <a asp-action="Index">Back to List</a>
+        </div>
+    </div>
+
+    <div class="overlay" id="overlay">
+        <div class="loader" id="loader"></div>
+    </div>
+
+    <div class="success-message" id="success-message">
+        <i class="fa fa-thumbs-up"></i> Successfully updated!
+    </div>
+
+    @section Scripts {
+        @{
+            await Html.RenderPartialAsync("_ValidationScriptsPartial");
+        }
+    }
+
+    <script>
+        function showLoadingAnimation(event) {
+            event.preventDefault();
+            document.getElementById('overlay').style.display = 'flex';
+
+            // Simulate form submission delay
+            setTimeout(function () {
+                document.getElementById('overlay').style.display = 'none';
+                document.getElementById('success-message').style.display = 'block';
+
+                setTimeout(function () {
+                    document.getElementById('success-message').style.display = 'none';
+                    document.getElementById('edit-form').submit();
+                }, 2000);
+            }, 2000);
+        }
+    </script>
+</body>
+</html>

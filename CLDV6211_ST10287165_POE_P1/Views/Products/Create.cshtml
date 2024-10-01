@@ -1,0 +1,186 @@
+﻿@model CLDV6211_ST10287165_POE_P1.Models.Product
+
+@{
+    ViewData["Title"] = "Create";
+}
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<style>
+    .create-container {
+        background: #f8f9fa; /* Light grayish background for a clean look */
+        padding: 20px;
+        border-radius: 8px;
+        max-width: 1000px;
+        margin: auto;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .create-title {
+        color: Black; /* Change the color to suit your theme */
+        text-shadow: 0 0 5px turquoise; /* Glowing effect */
+        text-align: center;
+        font-size: 24px; /* Larger font size for the title */
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    label {
+        font-weight: bold; /* Bold text for emphasis */
+        color: 204a87; /* Change the color to suit your theme */
+     text-shadow: 0 0 1px Black; /* Glowing effect */
+        display: block; /* Ensures labels are on their own line */
+        margin-bottom: 5px; /* Adds space below labels */
+        font-size: 15px; /* Slightly larger and clearer font size */
+    }
+
+    .form-control {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #c6d9f1; /* Lighter border color for inputs */
+        border-radius: 4px;
+        background-color: #ffffff; /* Bright white background for inputs */
+    }
+
+    .btn-primary {
+        background-color: #00ced1; /* Turquoise color for primary buttons */
+        border: none;
+        padding: 10px 20px;
+        color: white;
+        display: block;
+        width: 100%;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+        .btn-primary:hover {
+            background-color: #008b8b; /* Darker turquoise on hover */
+        }
+
+    .message {
+        text-align: center;
+        color: #204a87; /* Darker blue for a subtle message */
+        margin-top: 20px;
+        font-size: 16px; /* Slightly larger font for better readability */
+    }
+</style>
+
+<div class="create-container">
+    <h1 class="create-title">Add Product</h1>
+
+    @if (Context.Session.GetString("IsClientLoggedIn") == "true")
+    {
+        <form asp-action="Create" asp-controller="Products" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label asp-for="Name">Name:</label>
+                <input asp-for="Name" class="form-control" required />
+            </div>
+            <div class="form-group">
+                <label asp-for="Description">Description:</label>
+                <textarea asp-for="Description" class="form-control" required></textarea>
+            </div>
+            <div class="form-group">
+                <label asp-for="Price">Price:</label>
+                <input asp-for="Price" class="form-control" type="number" step="0.01" required />
+            </div>
+            <div class="form-group">
+                <label asp-for="Category">Category:</label>
+                <input asp-for="Category" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Quantity" class="control-label"></label>
+                <input asp-for="Quantity" class="form-control" />
+                <span asp-validation-for="Quantity" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label for="inStockDisplay">In Stock:</label>
+                <input type="text" id="inStockDisplay" class="form-control" disabled />
+                <input type="hidden" asp-for="InStock" />
+            </div>
+
+
+            <div class="form-group">
+                <label asp-for="ImageType">Image Type:</label>
+                <select asp-for="ImageType" id="imageType" class="form-control" required>
+                    <option value="Url">URL</option>
+                    <option value="Upload">Upload</option>
+                </select>
+            </div>
+            <div class="form-group" id="urlInput" style="display:none;">
+                <label asp-for="ImageUrl">Image URL:</label>
+                <input asp-for="ImageUrl" class="form-control" />
+            </div>
+            <div class="form-group" id="uploadInput" style="display:none;">
+                <label for="imageUpload">Upload Image:</label>
+                <input type="file" id="imageUpload" name="ImageUpload" class="form-control" />
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    }
+    else
+    {
+        <p class="message">Only clients can add products. <a asp-action="Login" asp-controller="Clients">Login here</a> as a client.</p>
+    }
+</div>
+
+
+@section Scripts {
+    <script>
+        function toggleImageInput(value) {
+            var urlInput = document.getElementById('urlInput');
+            var uploadInput = document.getElementById('uploadInput');
+            if (value === 'Url') {
+                urlInput.style.display = 'block';
+                uploadInput.style.display = 'none';
+            } else if (value === 'Upload') {
+                urlInput.style.display = 'none';
+                uploadInput.style.display = 'block';
+            } else {
+                urlInput.style.display = 'none';
+                uploadInput.style.display = 'none';
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            var imageTypeSelector = document.getElementById('imageType');
+            toggleImageInput(imageTypeSelector.value);
+
+            imageTypeSelector.addEventListener('change', function () {
+                toggleImageInput(this.value);
+            });
+        }); document.addEventListener("DOMContentLoaded", function () {
+            const quantityInput = document.querySelector('input[name="Quantity"]');
+            const inStockDisplay = document.getElementById('inStockDisplay');
+            const inStockHiddenInput = document.querySelector('input[name="InStock"]');
+
+            function updateStockStatus() {
+                const quantity = parseInt(quantityInput.value, 10) || 0;
+                const inStockValue = quantity > 0 ? "In Stock" : "Out of Stock";
+                inStockDisplay.value = inStockValue;
+                inStockHiddenInput.value = inStockValue;
+            }
+
+            // Listen to input event on Quantity to update stock status immediately
+            quantityInput.addEventListener('input', updateStockStatus);
+
+            // Initial check on page load
+            updateStockStatus();
+
+            // Image input toggle logic
+            var imageTypeSelector = document.getElementById('imageType');
+            var urlInput = document.getElementById('urlInput');
+            var uploadInput = document.getElementById('uploadInput');
+
+            function toggleImageInput(value) {
+                urlInput.style.display = (value === 'Url') ? 'block' : 'none';
+                uploadInput.style.display = (value === 'Upload') ? 'block' : 'none';
+            }
+
+            toggleImageInput(imageTypeSelector.value);
+            imageTypeSelector.addEventListener('change', function () {
+                toggleImageInput(this.value);
+            });
+        });
+    </script>
+}

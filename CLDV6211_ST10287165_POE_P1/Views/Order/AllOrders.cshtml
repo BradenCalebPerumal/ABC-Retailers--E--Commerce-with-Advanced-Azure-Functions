@@ -1,0 +1,40 @@
+﻿@model IEnumerable<CLDV6211_ST10287165_POE_P1.Models.Order>
+
+@{
+    ViewData["Title"] = "All Orders";
+}
+
+<h2>All Orders</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Order ID</th>
+            <th>Customer Email</th>
+            <th>Order Date</th>
+            <th>Status</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var order in Model)
+        {
+            <tr>
+                <td>@order.RowKey</td>
+                <td>@order</td> <!-- This assumes PartitionKey is the CustomerId or email -->
+                <td>@order.OrderDate.ToString("yyyy-MM-dd")</td>
+                <td>@order.OrderStatus</td>
+                <td>
+                    <form asp-action="UpdateOrderStatus" method="post" class="form-inline">
+                        <input type="hidden" name="orderId" value="@order.RowKey" />
+                        <select name="newStatus" class="form-control">
+                            <option value="Pending">Pending</option>
+                            <option value="Processed" >Processed</option>
+                        </select>
+                        <button type="submit" class="btn btn-primary">Update</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,602 @@
+﻿@{
+    ViewData["Title"] = "Home";
+    bool isClientLoggedIn = Context.Session.GetString("IsClientLoggedIn") == "true";
+    bool isLoggedIn = Context.Session.GetString("isLoggedIn") == "true";
+    bool isAdminLoggedIn = Context.Session.GetString("isAdminLoggedIn") == "true";
+}
+
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>@ViewData["Title"] - ABC Retailers</title>
+<link href="~/css/bootstrap (1).css" rel="stylesheet" />
+
+<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+<link rel="stylesheet" href="~/CLDV6211_ST10287165_POE_P1.styles.css" asp-append-version="true" />
+<style>
+    .navbar .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+
+    .navbar .dropdown-menu {
+        margin-top: 0;
+    }
+
+    .navbar {
+        background-color: black; /* Charcoal gray for a sleek look */
+        color: white; /* White text for contrast */
+        height: 80px; /* Increase the height for a thicker navbar */
+        padding: 10px 15px; /* Adjust padding to vertically center the content */
+        text-align:left;
+    }
+
+        .navbar a {
+            color: white; /* Set text color */
+            text-shadow: 0 0 7px #00FFFF; /* Green glow */
+        }
+
+            /* For a stronger or different colored glow, adjust the color and the blur radius */
+            .navbar a:hover {
+                color: white; /* Keep the text color white when hovering */
+                text-shadow: 0 0 10px #007bff; /* Red glow on hover */
+            }
+
+    /* Navbar brand glow */
+    .navbar-brand {
+        color: white !important; /* Important to override any other styles */
+        text-shadow: 0 0 8px #007bff; /* Blue glow */
+    }
+
+        /* Ensures the dropdown and its items are always visible with proper contrast */
+        .navbar .dropdown-menu {
+            background-color: #333; /* Darker background for dropdown */
+            color: white; /* White text for contrast */
+            border: none; /* Clean look without border */
+        }
+
+        /* Ensure dropdown items are visible and have a hover effect */
+        .navbar .dropdown-item {
+            color: #ccc; /* Light grey text for visibility */
+            transition: background-color 0.3s; /* Smooth transition for hover effect */
+        }
+
+            .navbar .dropdown-item:hover {
+                background-color: #2a2a2a; /* Slightly lighter grey background on hover */
+            }
+
+    .cart-count {
+        background-color: #00aaff; /* Electric blue background for visibility */
+        color: white; /* White text */
+        border-radius: 50%;
+        padding: 0 5px; /* Adjust padding as needed */
+        font-size: 0.75rem; /* Smaller font size for the count */
+        position: absolute;
+        top: 0; /* Adjust position as needed */
+        right: -10px; /* Adjust position as needed */
+    }
+
+    .nav-link .fa-shopping-cart {
+        font-size: 1.3rem; /* Makes the cart icon larger */
+    }
+
+    /* Style for the navbar brand link */
+    .navbar-brand {
+        color: #fff !important; /* Sets the color to white */
+        transition: color 0.3s ease; /* Smooth color transition */
+    }
+
+        /* Hover effect for the navbar brand link */
+        .navbar-brand:hover {
+            color: #00aaff !important; /* Change color to electric blue when hovered */
+        }
+
+    /* If the logo is an image and you want to apply a filter effect to change its appearance on hover, you can add: */
+    .navbar-icon {
+        transition: filter 0.3s ease; /* Smooth filter transition */
+    }
+
+        .navbar-icon:hover {
+            filter: brightness(0.75) saturate(1.5); /* Example filter: adjust as needed to achieve a brighter and more saturated effect */
+        }
+
+
+
+
+
+    /* Footer Styles */
+    .footer {
+        background-color: black; /* Dark Gray as the background color */
+        color: #ffffff; /* White text color */
+        padding: 20px 0; /* Padding for top and bottom */
+    }
+
+    footer.footer {
+            color: #00CED1; /* Turquoise/Cyan for links */
+            text-decoration: none; /* Removes underline from links */
+        }
+
+            .footer a:hover {
+                color: #ffffff; /* White color on hover for better visibility */
+                text-decoration: underline; /* Underline on hover for links */
+            }
+
+    .social-icon {
+        display: inline-block;
+        width: 24px; /* Adjust size as needed */
+        height: 24px; /* Adjust size as needed */
+        background-size: cover; /* Ensures the icon fills the container */
+        margin: 0 10px; /* Spacing between icons */
+    }
+
+ 
+</style>
+
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark border-bottom box-shadow mb-3 navbar-custom">
+            <div class="container-fluid">
+               
+                <img src="~/images/latest.png" alt="Icon Logo" class="navbar-icon">
+                
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">ABC Retailers</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        @if (isClientLoggedIn)
+                        {
+                            <!-- Links specific for clients -->
+                            <li class="nav-item">
+
+
+                            </li>
+                          
+                         
+                            <li class="nav-item">
+
+                            </li>
+                            <li class="nav-item">
+
+                            </li>
+                            <li class="nav-item">
+
+                            </li>
+                            <li class="nav-item">
+
+                            </li>
+                            <li class="nav-item">
+
+                            </li>
+                            <li class="nav-item">
+
+                            </li>
+                            <li class="nav-item">
+
+                            </li>
+                            <li class="nav-item">
+
+                            </li>
+                            <li class="nav-item">
+
+                            </li>
+                             <li class="nav-item">
+
+                            </li>
+ <li class="nav-item">
+
+                            </li>
+ <li class="nav-item">
+
+                            </li>
+ <li class="nav-item">
+
+                            </li>
+ <li class="nav-item">
+
+                            </li>
+ <li class="nav-item">
+
+                            </li>
+ <li class="nav-item">
+
+                            </li>
+ <li class="nav-item">
+
+                            </li>
+ <li class="nav-item">
+
+                            </li>
+ <li class="nav-item">
+
+                            </li>
+ <li class="nav-item">
+
+                            </li>
+ <li class="nav-item">
+
+                            </li>
+                            <li class="nav-item">
+
+                            </li>
+                             <li class="nav-item">
+
+                            </li>
+ <li class="nav-item">
+
+                            </li>
+ <li class="nav-item">
+
+                            </li>
+ <li class="nav-item">
+
+                            </li>
+ <li class="nav-item">
+
+                            </li>
+ <li class="nav-item">
+
+                            </li>
+ <li class="nav-item">
+
+                            </li>
+                            <li class="nav-item">
+
+                            </li>
+ <li class="nav-item">
+
+                            </li>
+                            <li class="nav-item">
+
+                            </li>
+
+
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="@Url.Action("Dashboard", "Clients")">Dashboard</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="@Url.Action("Logout", "Clients")">Logout</a>
+                            </li>
+                        }
+                        else if (isLoggedIn)
+                        {
+                            <!-- Links specific for customers -->
+                            <li class="nav-item">
+
+                            </li>
+                            <li class="nav-item">
+
+                            </li>
+                            <li class="nav-item">
+
+                            </li>
+                            <li class="nav-item">
+
+                            </li>
+                            <li class="nav-item">
+
+                            </li>
+                            <li class="nav-item">
+
+                            </li>
+                            <li class="nav-item">
+
+                            </li>
+                            <li class="nav-item">
+
+                            </li>
+                            <li class="nav-item">
+
+                            </li>
+                            <li class="nav-item">
+
+                            </li>
+                            <li class="nav-item">
+
+                            </li>
+                            <li class="nav-item">
+
+                            </li>
+                            <li class="nav-item">
+
+                            </li>
+                            <li class="nav-item">
+
+                            </li>
+                            <li class="nav-item">
+
+                            </li>
+                            <li class="nav-item">
+
+                            </li>
+                            <li class="nav-item">
+
+                            </li>
+                            <li class="nav-item">
+
+                            </li>
+                            <li class="nav-item">
+
+                            </li>
+                            <li class="nav-item">
+
+                            </li>
+                            <li class="nav-item">
+
+                            </li>
+                           <li class="nav-item">
+
+                            </li><li class="nav-item">
+
+                            </li>
+                            <li class="nav-item">
+
+                            </li>
+                          
+                         
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="@Url.Action("History", "Customers")">Order History</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="@Url.Action("Index", "Products")">Catalogue</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="@Url.Action("Logoutt", "Customers")">Logout</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="@Url.Action("CartView", "Cart")">
+                                    <i class="fa fa-shopping-cart"></i>
+                                    <span>(@Context.Session.GetInt32("CartCount"))</span>
+                                </a>
+                            </li>
+
+                        }
+                        else if (isAdminLoggedIn)
+                        {
+                            <!-- Links specific for customers -->
+                            <li class="nav-item">
+
+                            </li>
+                            <li class="nav-item">
+
+                            </li>
+                            <li class="nav-item">
+
+                            </li>
+                            <li class="nav-item">
+
+                            </li>
+                            <li class="nav-item">
+
+                            </li>
+                            <li class="nav-item">
+
+                            </li>
+                            <li class="nav-item">
+
+                            </li>
+                            <li class="nav-item">
+
+                            </li>
+                            <li class="nav-item">
+
+                            </li>
+                            <li class="nav-item">
+
+                            </li>
+                            <li class="nav-item">
+
+                            </li>
+                            <li class="nav-item">
+
+                            </li>
+                            <li class="nav-item">
+
+                            </li>
+                            <li class="nav-item">
+
+                            </li>
+                            <li class="nav-item">
+
+                            </li>
+                            <li class="nav-item">
+
+                            </li>
+                            <li class="nav-item">
+
+                            </li>
+                            <li class="nav-item">
+
+                            </li>
+                            <li class="nav-item">
+
+                            </li>
+                            <li class="nav-item">
+
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="@Url.Action("OrderHistory", "Customers")">Update status</a>
+                            </li>
+
+
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="@Url.Action("OrderHistory", "Customer")">Orders</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="@Url.Action("Index", "Admins")">Profile</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="@Url.Action("Logout", "Admins")">Logout</a>
+                            </li>
+
+                        }
+                        else
+                        {
+                            <!-- General public links -->
+                            <li class="nav-item">
+                               
+
+                            </li>
+                            <li class="nav-item">
+
+                            </li>
+                            <li class="nav-item">
+
+                            </li>
+                            <li class="nav-item">
+
+                            </li>
+                            <li class="nav-item">
+
+                            </li>
+                            <li class="nav-item">
+
+                            </li>
+                            <li class="nav-item">
+
+                            </li>
+                            <li class="nav-item">
+
+                            </li>
+                            <li class="nav-item">
+
+                            </li>
+                              <li class="nav-item">
+                               
+                            </li>
+                              <li class="nav-item">
+                               
+                            </li>
+                         
+                       <li class="nav-item">
+                               
+                            </li>
+                            <li class="nav-item">
+
+                            </li>
+
+                              <li class="nav-item">
+                               
+                            </li>
+                            <li class="nav-item">
+
+                            </li>
+                                  <li class="nav-item">
+
+                            </li>
+                            <li class="nav-item">
+
+                            </li>
+                            <li class="nav-item">
+
+                            </li>
+
+                            <li class="nav-item">
+
+                            </li>
+
+
+
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link text-white dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Login
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" asp-area="" asp-controller="Clients" asp-action="Loginn">Login as Client</a></li>
+                                    <li><a class="dropdown-item" asp-controller="Customers" asp-action="Login">Login as Customer</a></li>
+                                    <li><a class="dropdown-item" asp-controller="Admins" asp-action="AdminLogin">Login as Admin</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="@Url.Action("Index", "Products")">Catalogue</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="@Url.Action("AboutUs", "Home")">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="@Url.Action("ContactUs", "Home")">Contact Us</a>
+                            </li>
+                           
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="@Url.Action("TermsOfUse", "Home")">Terms Of Use</a>
+                            </li>
+                            
+                            <!-- Include your login and registration links if needed -->
+                        }
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="content-padding">
+            @RenderBody()
+        </main>
+    </div>
+    <footer class="footer text-muted">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4">
+                    &copy; 2024 - ABC Retailers (PTY) LTD - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+
+                    <a asp-area="" asp-controller="Home" asp-action="TermsOfUse">Terms of use</a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 text-center">
+                    <h6>Follow Us On</h6>
+                    <div class="social-icons">
+
+                        <a href="https://www.facebook.com" class="social-icon" id="facebook-icon"></a>
+                        <a href="https://www.instagram.com" class="social-icon" id="instagram-icon"></a>
+                        <a href="https://www.twitter.com" class="social-icon" id="twitter-icon"></a>
+                        <!-- Add more social media links as needed -->
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 text-center">
+                    <h6>We Accept</h6>
+                    <div class="payment-icons">
+                        <!-- Payment methods remain as images or can also be turned into links if necessary -->
+                        <img src="~/images/mastercard.png" alt="Mastercard">
+                        <img src="~/images/visa.png" alt="Visa">
+                        <img src="~/images/american exp.png" alt="American Express">
+                        <img src="~/images/ozow.png" alt="Ozow">
+                        <img src="~/images/payfast.png" alt="Payfast E">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+
+<script>
+    $(document).ready(function () {
+        $('.add-to-cart-btn').click(function (e) {
+            e.preventDefault();
+            var productId = $(this).data('product-id');
+            var quantity = 1; // Or another quantity based on your UI
+            $.ajax({
+                url: '@Url.Action("AddToCart", "Cart")',
+                type: 'POST',
+                data: { productId: productId, quantity: quantity },
+                success: function (result) {
+                    if (result.success) {
+                        $('#cart-count').text(result.newCartCount);  // Assuming you have an element with ID 'cart-count'
+                    }
+                },
+                error: function (error) {
+                    console.log("Error updating cart:", error);
+                }
+            });
+        });
+    });
+
+</script>

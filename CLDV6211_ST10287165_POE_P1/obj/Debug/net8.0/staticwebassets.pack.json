@@ -1,0 +1,445 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Documents\\cldv6212-part-1-CalebPerumal28\\POE P1-ST10287165\\CLDV6211_ST10287165_POE_P1\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\CLDV6211_ST10287165_POE_P1.bundle.scp.css",
+      "PackagePath": "staticwebassets\\CLDV6211_ST10287165_POE_P1.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Documents\\cldv6212-part-1-CalebPerumal28\\POE P1-ST10287165\\CLDV6211_ST10287165_POE_P1\\wwwroot\\Images\\Buds3Pro-MLP-Hero-Buds3Pro-KV-lo.png",
+      "PackagePath": "staticwebassets\\Images\\Buds3Pro-MLP-Hero-Buds3Pro-KV-lo.png"
+    },
+    {
+      "Id": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Documents\\cldv6212-part-1-CalebPerumal28\\POE P1-ST10287165\\CLDV6211_ST10287165_POE_P1\\wwwroot\\Images\\Comparision of loud computing.webp",
+      "PackagePath": "staticwebassets\\Images\\Comparision of loud computing.webp"
+    },
+    {
+      "Id": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Documents\\cldv6212-part-1-CalebPerumal28\\POE P1-ST10287165\\CLDV6211_ST10287165_POE_P1\\wwwroot\\Images\\KHUMALOCRAFT LOGO.png",
+      "PackagePath": "staticwebassets\\Images\\KHUMALOCRAFT LOGO.png"
+    },
+    {
+      "Id": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Documents\\cldv6212-part-1-CalebPerumal28\\POE P1-ST10287165\\CLDV6211_ST10287165_POE_P1\\wwwroot\\Images\\LOGO ENLARGENED.png",
+      "PackagePath": "staticwebassets\\Images\\LOGO ENLARGENED.png"
+    },
+    {
+      "Id": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Documents\\cldv6212-part-1-CalebPerumal28\\POE P1-ST10287165\\CLDV6211_ST10287165_POE_P1\\wwwroot\\Images\\Logo1.png",
+      "PackagePath": "staticwebassets\\Images\\Logo1.png"
+    },
+    {
+      "Id": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Documents\\cldv6212-part-1-CalebPerumal28\\POE P1-ST10287165\\CLDV6211_ST10287165_POE_P1\\wwwroot\\Images\\Pot Sale1.png",
+      "PackagePath": "staticwebassets\\Images\\Pot Sale1.png"
+    },
+    {
+      "Id": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Documents\\cldv6212-part-1-CalebPerumal28\\POE P1-ST10287165\\CLDV6211_ST10287165_POE_P1\\wwwroot\\Images\\Samsung-AI-EcoBubble-Front-Load.png",
+      "PackagePath": "staticwebassets\\Images\\Samsung-AI-EcoBubble-Front-Load.png"
+    },
+    {
+      "Id": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Documents\\cldv6212-part-1-CalebPerumal28\\POE P1-ST10287165\\CLDV6211_ST10287165_POE_P1\\wwwroot\\Images\\Samsung_Dotcom_Q6B6-eStore_Pre-O.png",
+      "PackagePath": "staticwebassets\\Images\\Samsung_Dotcom_Q6B6-eStore_Pre-O.png"
+    },
+    {
+      "Id": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Documents\\cldv6212-part-1-CalebPerumal28\\POE P1-ST10287165\\CLDV6211_ST10287165_POE_P1\\wwwroot\\Images\\american exp.png",
+      "PackagePath": "staticwebassets\\Images\\american exp.png"
+    },
+    {
+      "Id": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Documents\\cldv6212-part-1-CalebPerumal28\\POE P1-ST10287165\\CLDV6211_ST10287165_POE_P1\\wwwroot\\Images\\craftting_eng.jpg",
+      "PackagePath": "staticwebassets\\Images\\craftting_eng.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Documents\\cldv6212-part-1-CalebPerumal28\\POE P1-ST10287165\\CLDV6211_ST10287165_POE_P1\\wwwroot\\Images\\facebook.png",
+      "PackagePath": "staticwebassets\\Images\\facebook.png"
+    },
+    {
+      "Id": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Documents\\cldv6212-part-1-CalebPerumal28\\POE P1-ST10287165\\CLDV6211_ST10287165_POE_P1\\wwwroot\\Images\\galaxy-ring-kv-endframe-pc.png",
+      "PackagePath": "staticwebassets\\Images\\galaxy-ring-kv-endframe-pc.png"
+    },
+    {
+      "Id": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Documents\\cldv6212-part-1-CalebPerumal28\\POE P1-ST10287165\\CLDV6211_ST10287165_POE_P1\\wwwroot\\Images\\hq720.png",
+      "PackagePath": "staticwebassets\\Images\\hq720.png"
+    },
+    {
+      "Id": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Documents\\cldv6212-part-1-CalebPerumal28\\POE P1-ST10287165\\CLDV6211_ST10287165_POE_P1\\wwwroot\\Images\\insta logo.png",
+      "PackagePath": "staticwebassets\\Images\\insta logo.png"
+    },
+    {
+      "Id": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Documents\\cldv6212-part-1-CalebPerumal28\\POE P1-ST10287165\\CLDV6211_ST10287165_POE_P1\\wwwroot\\Images\\latest.png",
+      "PackagePath": "staticwebassets\\Images\\latest.png"
+    },
+    {
+      "Id": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Documents\\cldv6212-part-1-CalebPerumal28\\POE P1-ST10287165\\CLDV6211_ST10287165_POE_P1\\wwwroot\\Images\\logopdf.jpg",
+      "PackagePath": "staticwebassets\\Images\\logopdf.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Documents\\cldv6212-part-1-CalebPerumal28\\POE P1-ST10287165\\CLDV6211_ST10287165_POE_P1\\wwwroot\\Images\\mastercard.png",
+      "PackagePath": "staticwebassets\\Images\\mastercard.png"
+    },
+    {
+      "Id": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Documents\\cldv6212-part-1-CalebPerumal28\\POE P1-ST10287165\\CLDV6211_ST10287165_POE_P1\\wwwroot\\Images\\ozow.png",
+      "PackagePath": "staticwebassets\\Images\\ozow.png"
+    },
+    {
+      "Id": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Documents\\cldv6212-part-1-CalebPerumal28\\POE P1-ST10287165\\CLDV6211_ST10287165_POE_P1\\wwwroot\\Images\\payfast.png",
+      "PackagePath": "staticwebassets\\Images\\payfast.png"
+    },
+    {
+      "Id": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Documents\\cldv6212-part-1-CalebPerumal28\\POE P1-ST10287165\\CLDV6211_ST10287165_POE_P1\\wwwroot\\Images\\pic logo.png",
+      "PackagePath": "staticwebassets\\Images\\pic logo.png"
+    },
+    {
+      "Id": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Documents\\cldv6212-part-1-CalebPerumal28\\POE P1-ST10287165\\CLDV6211_ST10287165_POE_P1\\wwwroot\\Images\\twitter.png",
+      "PackagePath": "staticwebassets\\Images\\twitter.png"
+    },
+    {
+      "Id": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Documents\\cldv6212-part-1-CalebPerumal28\\POE P1-ST10287165\\CLDV6211_ST10287165_POE_P1\\wwwroot\\Images\\visa.png",
+      "PackagePath": "staticwebassets\\Images\\visa.png"
+    },
+    {
+      "Id": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Documents\\cldv6212-part-1-CalebPerumal28\\POE P1-ST10287165\\CLDV6211_ST10287165_POE_P1\\wwwroot\\css\\aaa.css",
+      "PackagePath": "staticwebassets\\css\\aaa.css"
+    },
+    {
+      "Id": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Documents\\cldv6212-part-1-CalebPerumal28\\POE P1-ST10287165\\CLDV6211_ST10287165_POE_P1\\wwwroot\\css\\bootstrap (1).css",
+      "PackagePath": "staticwebassets\\css\\bootstrap (1).css"
+    },
+    {
+      "Id": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Documents\\cldv6212-part-1-CalebPerumal28\\POE P1-ST10287165\\CLDV6211_ST10287165_POE_P1\\wwwroot\\css\\confetti.css",
+      "PackagePath": "staticwebassets\\css\\confetti.css"
+    },
+    {
+      "Id": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Documents\\cldv6212-part-1-CalebPerumal28\\POE P1-ST10287165\\CLDV6211_ST10287165_POE_P1\\wwwroot\\css\\newtheme.css",
+      "PackagePath": "staticwebassets\\css\\newtheme.css"
+    },
+    {
+      "Id": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Documents\\cldv6212-part-1-CalebPerumal28\\POE P1-ST10287165\\CLDV6211_ST10287165_POE_P1\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Documents\\cldv6212-part-1-CalebPerumal28\\POE P1-ST10287165\\CLDV6211_ST10287165_POE_P1\\wwwroot\\css\\styler.css",
+      "PackagePath": "staticwebassets\\css\\styler.css"
+    },
+    {
+      "Id": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Documents\\cldv6212-part-1-CalebPerumal28\\POE P1-ST10287165\\CLDV6211_ST10287165_POE_P1\\wwwroot\\css\\styles.css",
+      "PackagePath": "staticwebassets\\css\\styles.css"
+    },
+    {
+      "Id": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Documents\\cldv6212-part-1-CalebPerumal28\\POE P1-ST10287165\\CLDV6211_ST10287165_POE_P1\\wwwroot\\css\\styles1.css",
+      "PackagePath": "staticwebassets\\css\\styles1.css"
+    },
+    {
+      "Id": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Documents\\cldv6212-part-1-CalebPerumal28\\POE P1-ST10287165\\CLDV6211_ST10287165_POE_P1\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Documents\\cldv6212-part-1-CalebPerumal28\\POE P1-ST10287165\\CLDV6211_ST10287165_POE_P1\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Documents\\cldv6212-part-1-CalebPerumal28\\POE P1-ST10287165\\CLDV6211_ST10287165_POE_P1\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Documents\\cldv6212-part-1-CalebPerumal28\\POE P1-ST10287165\\CLDV6211_ST10287165_POE_P1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Documents\\cldv6212-part-1-CalebPerumal28\\POE P1-ST10287165\\CLDV6211_ST10287165_POE_P1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Documents\\cldv6212-part-1-CalebPerumal28\\POE P1-ST10287165\\CLDV6211_ST10287165_POE_P1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Documents\\cldv6212-part-1-CalebPerumal28\\POE P1-ST10287165\\CLDV6211_ST10287165_POE_P1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Documents\\cldv6212-part-1-CalebPerumal28\\POE P1-ST10287165\\CLDV6211_ST10287165_POE_P1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Documents\\cldv6212-part-1-CalebPerumal28\\POE P1-ST10287165\\CLDV6211_ST10287165_POE_P1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Documents\\cldv6212-part-1-CalebPerumal28\\POE P1-ST10287165\\CLDV6211_ST10287165_POE_P1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Documents\\cldv6212-part-1-CalebPerumal28\\POE P1-ST10287165\\CLDV6211_ST10287165_POE_P1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Documents\\cldv6212-part-1-CalebPerumal28\\POE P1-ST10287165\\CLDV6211_ST10287165_POE_P1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Documents\\cldv6212-part-1-CalebPerumal28\\POE P1-ST10287165\\CLDV6211_ST10287165_POE_P1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Documents\\cldv6212-part-1-CalebPerumal28\\POE P1-ST10287165\\CLDV6211_ST10287165_POE_P1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Documents\\cldv6212-part-1-CalebPerumal28\\POE P1-ST10287165\\CLDV6211_ST10287165_POE_P1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Documents\\cldv6212-part-1-CalebPerumal28\\POE P1-ST10287165\\CLDV6211_ST10287165_POE_P1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Documents\\cldv6212-part-1-CalebPerumal28\\POE P1-ST10287165\\CLDV6211_ST10287165_POE_P1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Documents\\cldv6212-part-1-CalebPerumal28\\POE P1-ST10287165\\CLDV6211_ST10287165_POE_P1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Documents\\cldv6212-part-1-CalebPerumal28\\POE P1-ST10287165\\CLDV6211_ST10287165_POE_P1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Documents\\cldv6212-part-1-CalebPerumal28\\POE P1-ST10287165\\CLDV6211_ST10287165_POE_P1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Documents\\cldv6212-part-1-CalebPerumal28\\POE P1-ST10287165\\CLDV6211_ST10287165_POE_P1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Documents\\cldv6212-part-1-CalebPerumal28\\POE P1-ST10287165\\CLDV6211_ST10287165_POE_P1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Documents\\cldv6212-part-1-CalebPerumal28\\POE P1-ST10287165\\CLDV6211_ST10287165_POE_P1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Documents\\cldv6212-part-1-CalebPerumal28\\POE P1-ST10287165\\CLDV6211_ST10287165_POE_P1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Documents\\cldv6212-part-1-CalebPerumal28\\POE P1-ST10287165\\CLDV6211_ST10287165_POE_P1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Documents\\cldv6212-part-1-CalebPerumal28\\POE P1-ST10287165\\CLDV6211_ST10287165_POE_P1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Documents\\cldv6212-part-1-CalebPerumal28\\POE P1-ST10287165\\CLDV6211_ST10287165_POE_P1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Documents\\cldv6212-part-1-CalebPerumal28\\POE P1-ST10287165\\CLDV6211_ST10287165_POE_P1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Documents\\cldv6212-part-1-CalebPerumal28\\POE P1-ST10287165\\CLDV6211_ST10287165_POE_P1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Documents\\cldv6212-part-1-CalebPerumal28\\POE P1-ST10287165\\CLDV6211_ST10287165_POE_P1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Documents\\cldv6212-part-1-CalebPerumal28\\POE P1-ST10287165\\CLDV6211_ST10287165_POE_P1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Documents\\cldv6212-part-1-CalebPerumal28\\POE P1-ST10287165\\CLDV6211_ST10287165_POE_P1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Documents\\cldv6212-part-1-CalebPerumal28\\POE P1-ST10287165\\CLDV6211_ST10287165_POE_P1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Documents\\cldv6212-part-1-CalebPerumal28\\POE P1-ST10287165\\CLDV6211_ST10287165_POE_P1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Documents\\cldv6212-part-1-CalebPerumal28\\POE P1-ST10287165\\CLDV6211_ST10287165_POE_P1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Documents\\cldv6212-part-1-CalebPerumal28\\POE P1-ST10287165\\CLDV6211_ST10287165_POE_P1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Documents\\cldv6212-part-1-CalebPerumal28\\POE P1-ST10287165\\CLDV6211_ST10287165_POE_P1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Documents\\cldv6212-part-1-CalebPerumal28\\POE P1-ST10287165\\CLDV6211_ST10287165_POE_P1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Documents\\cldv6212-part-1-CalebPerumal28\\POE P1-ST10287165\\CLDV6211_ST10287165_POE_P1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Documents\\cldv6212-part-1-CalebPerumal28\\POE P1-ST10287165\\CLDV6211_ST10287165_POE_P1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Documents\\cldv6212-part-1-CalebPerumal28\\POE P1-ST10287165\\CLDV6211_ST10287165_POE_P1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Documents\\cldv6212-part-1-CalebPerumal28\\POE P1-ST10287165\\CLDV6211_ST10287165_POE_P1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Documents\\cldv6212-part-1-CalebPerumal28\\POE P1-ST10287165\\CLDV6211_ST10287165_POE_P1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Documents\\cldv6212-part-1-CalebPerumal28\\POE P1-ST10287165\\CLDV6211_ST10287165_POE_P1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Documents\\cldv6212-part-1-CalebPerumal28\\POE P1-ST10287165\\CLDV6211_ST10287165_POE_P1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Documents\\cldv6212-part-1-CalebPerumal28\\POE P1-ST10287165\\CLDV6211_ST10287165_POE_P1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Documents\\cldv6212-part-1-CalebPerumal28\\POE P1-ST10287165\\CLDV6211_ST10287165_POE_P1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Documents\\cldv6212-part-1-CalebPerumal28\\POE P1-ST10287165\\CLDV6211_ST10287165_POE_P1\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Documents\\cldv6212-part-1-CalebPerumal28\\POE P1-ST10287165\\CLDV6211_ST10287165_POE_P1\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Documents\\cldv6212-part-1-CalebPerumal28\\POE P1-ST10287165\\CLDV6211_ST10287165_POE_P1\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Documents\\cldv6212-part-1-CalebPerumal28\\POE P1-ST10287165\\CLDV6211_ST10287165_POE_P1\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Documents\\cldv6212-part-1-CalebPerumal28\\POE P1-ST10287165\\CLDV6211_ST10287165_POE_P1\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Documents\\cldv6212-part-1-CalebPerumal28\\POE P1-ST10287165\\CLDV6211_ST10287165_POE_P1\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Documents\\cldv6212-part-1-CalebPerumal28\\POE P1-ST10287165\\CLDV6211_ST10287165_POE_P1\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Documents\\cldv6212-part-1-CalebPerumal28\\POE P1-ST10287165\\CLDV6211_ST10287165_POE_P1\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Documents\\cldv6212-part-1-CalebPerumal28\\POE P1-ST10287165\\CLDV6211_ST10287165_POE_P1\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Documents\\cldv6212-part-1-CalebPerumal28\\POE P1-ST10287165\\CLDV6211_ST10287165_POE_P1\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Documents\\cldv6212-part-1-CalebPerumal28\\POE P1-ST10287165\\CLDV6211_ST10287165_POE_P1\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Documents\\cldv6212-part-1-CalebPerumal28\\POE P1-ST10287165\\CLDV6211_ST10287165_POE_P1\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Documents\\cldv6212-part-1-CalebPerumal28\\POE P1-ST10287165\\CLDV6211_ST10287165_POE_P1\\wwwroot\\uploads\\0a04c808-6d07-4770-8903-61507196648d.png",
+      "PackagePath": "staticwebassets\\uploads\\0a04c808-6d07-4770-8903-61507196648d.png"
+    },
+    {
+      "Id": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Documents\\cldv6212-part-1-CalebPerumal28\\POE P1-ST10287165\\CLDV6211_ST10287165_POE_P1\\wwwroot\\uploads\\216afbb9-c907-4f65-8f72-e39edd70d2eb.png",
+      "PackagePath": "staticwebassets\\uploads\\216afbb9-c907-4f65-8f72-e39edd70d2eb.png"
+    },
+    {
+      "Id": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Documents\\cldv6212-part-1-CalebPerumal28\\POE P1-ST10287165\\CLDV6211_ST10287165_POE_P1\\wwwroot\\uploads\\45ac73e7-6a35-422f-9460-9348ca51613b.png",
+      "PackagePath": "staticwebassets\\uploads\\45ac73e7-6a35-422f-9460-9348ca51613b.png"
+    },
+    {
+      "Id": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Documents\\cldv6212-part-1-CalebPerumal28\\POE P1-ST10287165\\CLDV6211_ST10287165_POE_P1\\wwwroot\\uploads\\5378c6d2-ed6b-4e78-97d0-f97e851e76d0.png",
+      "PackagePath": "staticwebassets\\uploads\\5378c6d2-ed6b-4e78-97d0-f97e851e76d0.png"
+    },
+    {
+      "Id": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Documents\\cldv6212-part-1-CalebPerumal28\\POE P1-ST10287165\\CLDV6211_ST10287165_POE_P1\\wwwroot\\uploads\\5bd77273-a519-4941-8033-5f5580abbf87.png",
+      "PackagePath": "staticwebassets\\uploads\\5bd77273-a519-4941-8033-5f5580abbf87.png"
+    },
+    {
+      "Id": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Documents\\cldv6212-part-1-CalebPerumal28\\POE P1-ST10287165\\CLDV6211_ST10287165_POE_P1\\wwwroot\\uploads\\5f504237-d05e-419a-a641-bbb2a68fc6c3.png",
+      "PackagePath": "staticwebassets\\uploads\\5f504237-d05e-419a-a641-bbb2a68fc6c3.png"
+    },
+    {
+      "Id": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Documents\\cldv6212-part-1-CalebPerumal28\\POE P1-ST10287165\\CLDV6211_ST10287165_POE_P1\\wwwroot\\uploads\\77c0b337-3f00-4f6f-9e64-a9a7df79e90c.png",
+      "PackagePath": "staticwebassets\\uploads\\77c0b337-3f00-4f6f-9e64-a9a7df79e90c.png"
+    },
+    {
+      "Id": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Documents\\cldv6212-part-1-CalebPerumal28\\POE P1-ST10287165\\CLDV6211_ST10287165_POE_P1\\wwwroot\\uploads\\828c2b17-43be-4a12-be31-7e751e8d36bc.png",
+      "PackagePath": "staticwebassets\\uploads\\828c2b17-43be-4a12-be31-7e751e8d36bc.png"
+    },
+    {
+      "Id": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Documents\\cldv6212-part-1-CalebPerumal28\\POE P1-ST10287165\\CLDV6211_ST10287165_POE_P1\\wwwroot\\uploads\\ad549c9e-fc85-4e59-943b-ae04550e2225.png",
+      "PackagePath": "staticwebassets\\uploads\\ad549c9e-fc85-4e59-943b-ae04550e2225.png"
+    },
+    {
+      "Id": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Documents\\cldv6212-part-1-CalebPerumal28\\POE P1-ST10287165\\CLDV6211_ST10287165_POE_P1\\wwwroot\\uploads\\beef89ba-4885-47e1-8923-69cc0ff9c2b4.png",
+      "PackagePath": "staticwebassets\\uploads\\beef89ba-4885-47e1-8923-69cc0ff9c2b4.png"
+    },
+    {
+      "Id": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Documents\\cldv6212-part-1-CalebPerumal28\\POE P1-ST10287165\\CLDV6211_ST10287165_POE_P1\\wwwroot\\uploads\\d3b1da62-1bb5-4415-b39a-b680537177e0.png",
+      "PackagePath": "staticwebassets\\uploads\\d3b1da62-1bb5-4415-b39a-b680537177e0.png"
+    },
+    {
+      "Id": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Documents\\cldv6212-part-1-CalebPerumal28\\POE P1-ST10287165\\CLDV6211_ST10287165_POE_P1\\wwwroot\\uploads\\d6a537da-c554-45ab-951d-b4d118b8b0e2.png",
+      "PackagePath": "staticwebassets\\uploads\\d6a537da-c554-45ab-951d-b4d118b8b0e2.png"
+    },
+    {
+      "Id": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Documents\\cldv6212-part-1-CalebPerumal28\\POE P1-ST10287165\\CLDV6211_ST10287165_POE_P1\\wwwroot\\uploads\\d841a2d8-838f-41ea-ba57-fe9c704b0ca6.png",
+      "PackagePath": "staticwebassets\\uploads\\d841a2d8-838f-41ea-ba57-fe9c704b0ca6.png"
+    },
+    {
+      "Id": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Documents\\cldv6212-part-1-CalebPerumal28\\POE P1-ST10287165\\CLDV6211_ST10287165_POE_P1\\wwwroot\\uploads\\e1840c0e-a37a-4282-8d15-bef8cb8ea319.png",
+      "PackagePath": "staticwebassets\\uploads\\e1840c0e-a37a-4282-8d15-bef8cb8ea319.png"
+    },
+    {
+      "Id": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Documents\\cldv6212-part-1-CalebPerumal28\\POE P1-ST10287165\\CLDV6211_ST10287165_POE_P1\\wwwroot\\uploads\\f4ec5bd4-b477-44cb-83df-0b8568d0d6dc.png",
+      "PackagePath": "staticwebassets\\uploads\\f4ec5bd4-b477-44cb-83df-0b8568d0d6dc.png"
+    },
+    {
+      "Id": "C:\\Users\\Caleb\\OneDrive - DLSSA\\Documents\\cldv6212-part-1-CalebPerumal28\\POE P1-ST10287165\\CLDV6211_ST10287165_POE_P1\\wwwroot\\uploads\\fc0c141b-a621-4a1c-aece-1d58bb91054f.png",
+      "PackagePath": "staticwebassets\\uploads\\fc0c141b-a621-4a1c-aece-1d58bb91054f.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.CLDV6211_ST10287165_POE_P1.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.CLDV6211_ST10287165_POE_P1.props",
+      "PackagePath": "build\\CLDV6211_ST10287165_POE_P1.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.CLDV6211_ST10287165_POE_P1.props",
+      "PackagePath": "buildMultiTargeting\\CLDV6211_ST10287165_POE_P1.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.CLDV6211_ST10287165_POE_P1.props",
+      "PackagePath": "buildTransitive\\CLDV6211_ST10287165_POE_P1.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,251 @@
+﻿@model List<CLDV6211_ST10287165_POE_P1.Models.CartItem>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your Shopping Cart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: #f4f4f4; /* Light gray background to make the content pop */
+            color: #333;
+        }
+
+        .header {
+            background-color: darkturquoise; /* Dark blue to match your theme */
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+            font-size: 24px;
+            border-radius: 8px; /* Rounded corners */
+            color: white; /* Change the color to suit your theme */
+            text-shadow: 0 0 5px #00ffcc; /* Glowing effect */
+        }
+
+        table {
+            width: 70%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px; /* Rounded corners for tables */
+        }
+
+        th, td {
+            text-align: left;
+            padding: 12px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: lightblue; /* Turquoise for headers to match your theme */
+            color: black;
+        }
+
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+
+        img.product-image {
+            width: 50px;
+            height: auto;
+            border-radius: 4px;
+            margin-right: 10px;
+        }
+
+        .quantity-input {
+            display: flex;
+            align-items: center;
+        }
+
+            .quantity-input button, .remove-btn {
+                border: none;
+                background-color: #ddd;
+                padding: 5px 10px;
+                cursor: pointer;
+                border-radius: 4px; /* Rounded buttons */
+            }
+
+                .quantity-input button:hover, .remove-btn:hover {
+                    background-color: #ccc;
+                }
+
+            .quantity-input input {
+                text-align: center;
+                width: 40px;
+                border: 1px solid #ddd;
+                height: 30px;
+                margin: 0 5px;
+            }
+
+        .remove-btn {
+            background-color: #f44336; /* Red color for delete buttons */
+            color: white;
+            border-radius: 4px; /* Rounded corners */
+        }
+
+        .total {
+            text-align: right;
+            margin: 20px;
+            font-size: 20px;
+            color: #0056b3; /* Theme blue color for text */
+        }
+
+        a.button {
+            background-color: #4CAF50; /* Stylish green for buttons */
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px; /* Rounded buttons */
+        }
+
+            a.button:hover {
+                background-color: #45a049;
+            }
+
+        .footer {
+            text-align: center;
+            padding: 10px 20px;
+            background-color: #283593; /* Consistent dark blue for the footer */
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            border-radius: 8px; /* Rounded bottom */
+        }
+
+        .empty-cart {
+            text-align: center;
+            font-size: 20px;
+            margin-top: 50px;
+            color: #333; /* Dark text for better readability */
+        }
+    </style>
+</head>
+<body>
+    <div class="header">Your Shopping Cart</div>
+    @if (!Model.Any())
+    {
+        <div class="empty-cart">Your Cart is Empty</div>
+    }
+    else
+    {
+        <table>
+            <tr>
+                <th></th>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Total</th>
+                <th></th>
+            </tr>
+            @foreach (var item in Model)
+            {
+                <tr id="item-row-@item.RowKey">
+                    <td><img src="@item.ProductImageUrl" alt="@item.ProductName" class="product-image"></td>
+                    <td>@item.ProductName</td>
+                    <td>
+                        <div class="quantity-input">
+                            <button onclick="decreaseQuantity('@item.RowKey')">-</button>
+                            <input type="text" value="@item.Quantity" id="quantity-@item.RowKey" readonly>
+                            <button onclick="increaseQuantity('@item.RowKey')">+</button>
+                        </div>
+                    </td>
+                    <td>@String.Format("{0:C}", item.Price)</td>
+                    <td id="line-total-@item.RowKey">@String.Format("{0:C}", item.Quantity * item.Price)</td>
+                    <td>
+                        <button class="remove-btn" onclick="confirmDelete('@item.RowKey')" aria-label="Delete">
+                            <i class="fa fa-trash-alt"></i>
+                        </button>
+                    </td>
+                </tr>
+            }
+            <tr>
+                <td colspan="6" class="total">
+                    <strong>Total:</strong> <span id="grand-total">@String.Format("{0:C}", Model.Sum(i => i.Price * i.Quantity))</span>
+                </td>
+            </tr>
+        </table>
+        <a class="button" asp-controller="Order" asp-action="Checkout">Checkout</a>
+    }
+
+    <div class="footer">Thank you for shopping with us!</div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+        // Increase the quantity of an item
+        function increaseQuantity(rowKey) {
+            var input = document.getElementById('quantity-' + rowKey);
+            var currentQuantity = parseInt(input.value, 10);
+            var newQuantity = currentQuantity + 1;
+            updateQuantity(rowKey, newQuantity);
+        }
+
+        // Decrease the quantity of an item
+        function decreaseQuantity(rowKey) {
+            var input = document.getElementById('quantity-' + rowKey);
+            var currentQuantity = parseInt(input.value, 10);
+            if (currentQuantity > 1) {
+                var newQuantity = currentQuantity - 1;
+                updateQuantity(rowKey, newQuantity);
+            } else {
+                confirmDelete(rowKey);
+            }
+        }
+
+        // Update item quantity
+        function updateQuantity(rowKey, newQuantity) {
+            $.ajax({
+                url: '@Url.Action("UpdateQuantity", "Cart")',
+                type: 'POST',
+                data: {
+                    rowKey: rowKey,
+                    quantity: newQuantity
+                },
+                success: function (response) {
+                    if (response.success) {
+                        document.getElementById('quantity-' + rowKey).value = newQuantity;
+                        var lineTotal = response.price * newQuantity;
+                        document.getElementById('line-total-' + rowKey).innerText = lineTotal.toFixed(2);
+                        document.getElementById('grand-total').innerText = response.newGrandTotal.toFixed(2);
+
+                        // Update the cart count in the navbar
+                        $('.cart-count').text(response.cartCount);
+                        window.location.reload(true);
+                    } else {
+                        alert(response.message); // Display warning message
+                    }
+                },
+                error: function () {
+                    alert('Error updating quantity');
+                }
+            });
+        }
+
+        // Confirm item deletion
+        function confirmDelete(rowKey) {
+            if (confirm("Are you sure you want to remove this item?")) {
+                $.ajax({
+                    url: '@Url.Action("DeleteItem", "Cart")',
+                    type: 'POST',
+                    data: { rowKey: rowKey },
+                    success: function (response) {
+                        $('#item-row-' + rowKey).remove();
+                        document.getElementById('grand-total').innerText = response.newGrandTotal.toFixed(2);
+                        $('.cart-count').text(response.cartCount);
+                        window.location.reload();
+                    },
+                    error: function () {
+                        alert('Error removing item');
+                    }
+                });
+            }
+        }
+    </script>
+</body>
+</html>

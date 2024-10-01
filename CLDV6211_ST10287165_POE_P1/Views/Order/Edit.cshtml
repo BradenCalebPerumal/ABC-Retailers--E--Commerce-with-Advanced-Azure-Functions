@@ -1,0 +1,88 @@
+﻿@model CLDV6211_ST10287165_POE_P1.Models.Order
+
+@{
+    ViewData["Title"] = "Edit Order";
+}
+
+<h2>Edit Order</h2>
+
+<form asp-controller="Order" asp-action="Edit" method="post" class="form-horizontal">
+    <input type="hidden" asp-for="RowKey" />
+    <input type="hidden" asp-for="PartitionKey" />
+
+    <!-- Order ID -->
+    <div class="form-group">
+        <label asp-for="RowKey" class="control-label col-md-2">Order ID</label>
+        <div class="col-md-10">
+            <input asp-for="RowKey" class="form-control" readonly />
+        </div>
+    </div>
+
+    <!-- Customer Email -->
+    <div class="form-group">
+        <label asp-for="CustEmail" class="control-label col-md-2">Customer Email</label>
+        <div class="col-md-10">
+            <input asp-for="CustEmail" class="form-control" readonly />
+        </div>
+    </div>
+
+    <!-- Order Date -->
+    <div class="form-group">
+        <label asp-for="OrderDate" class="control-label col-md-2">Order Date</label>
+        <div class="col-md-10">
+            <input asp-for="OrderDate" class="form-control" readonly />
+        </div>
+    </div>
+
+    <!-- Total Amount -->
+    <div class="form-group">
+        <label asp-for="TotalAmount" class="control-label col-md-2">Total Amount</label>
+        <div class="col-md-10">
+            <input asp-for="TotalAmount" class="form-control" readonly />
+        </div>
+    </div>
+
+    <!-- Shipping Address -->
+    <div class="form-group">
+        <label asp-for="ShippingAddress" class="control-label col-md-2">Shipping Address</label>
+        <div class="col-md-10">
+            <input asp-for="ShippingAddress" class="form-control" readonly />
+        </div>
+    </div>
+
+    <!-- Payment Method -->
+    <div class="form-group">
+        <label asp-for="PaymentMethod" class="control-label col-md-2">Payment Method</label>
+        <div class="col-md-10">
+            <input asp-for="PaymentMethod" class="form-control" readonly />
+        </div>
+    </div>
+
+    <!-- Order Status -->
+    <div class="form-group">
+        <label asp-for="OrderStatus" class="control-label col-md-2">Order Status</label>
+        <div class="col-md-10">
+            <select asp-for="OrderStatus" class="form-control">
+                <option value="Pending" selected="@Model.OrderStatus == " Pending"">Pending</option>
+                <option value="Processed" selected="@Model.OrderStatus == " Processed"">Processed</option>
+                <option value="Shipped" selected="@Model.OrderStatus == " Shipped"">Shipped</option>
+                <option value="Delivered" selected="@Model.OrderStatus == " Delivered"">Delivered</option>
+                <option value="Cancelled" selected="@Model.OrderStatus == " Cancelled"">Cancelled</option>
+                <!-- Add other statuses as needed -->
+            </select>
+        </div>
+    </div>
+
+    <!-- Submit Button -->
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Update Order" class="btn btn-primary" />
+        </div>
+    </div>
+</form>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

@@ -1,0 +1,81 @@
+﻿@model CLDV6211_ST10287165_POE_P1.Models.Admin
+
+@{
+    ViewData["Title"] = "Edit Admin";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="~/css/styles1.css">
+</head>
+<body>
+    <div class="header">Edit Admin</div>
+
+    <div class="container">
+        <h4>Admin</h4>
+        <hr />
+        <div class="row">
+            <div class="col-md-4">
+                <form id="edit-form" asp-action="Edit" method="post" onsubmit="showLoadingAnimation(event)">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <input type="hidden" asp-for="AdminID" />
+                    <input type="hidden" asp-for="AdminPasswordHash" />
+                    <input type="hidden" asp-for="RowKey" />
+                    <div class="form-group">
+                        <label asp-for="AdminEmail" class="control-label"></label>
+                        <input asp-for="AdminEmail" class="form-control" />
+                        <span asp-validation-for="AdminEmail" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="AdminPassword" class="control-label"></label>
+                        <input asp-for="AdminPassword" class="form-control" />
+                        <span asp-validation-for="AdminPassword" class="text-danger"></span>
+                    </div>
+                   
+                    <div class="form-group">
+                        <input type="submit" value="Save" class="btn btn-primary" />
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="back-to-list">
+            <a asp-action="Index">Back to List</a>
+        </div>
+    </div>
+
+    <div class="overlay" id="overlay">
+        <div class="loader" id="loader"></div>
+    </div>
+
+    <div class="success-message" id="success-message">
+        <i class="fa fa-thumbs-up"></i> Successfully updated!
+    </div>
+
+
+
+    @section Scripts {
+        @{
+            await Html.RenderPartialAsync("_ValidationScriptsPartial");
+        }
+    }
+
+    <script>
+        function showLoadingAnimation(event) {
+            event.preventDefault();
+            document.getElementById('overlay').style.display = 'flex';
+
+            // Simulate form submission delay
+            setTimeout(function () {
+                document.getElementById('overlay').style.display = 'none';
+                document.getElementById('success-message').style.display = 'block';
+
+                setTimeout(function () {
+                    document.getElementById('success-message').style.display = 'none';
+                    document.getElementById('edit-form').submit();
+                }, 2000);
+            }, 2000);
+        }
+    </script>
+</body>
+</html>

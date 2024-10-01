@@ -1,0 +1,44 @@
+﻿@* @model IEnumerable<CLDV6211_ST10287165_POE_P1.Models.Order>
+
+@{
+    ViewData["Title"] = "Processed Orders";
+}
+
+<h1>Your Processed Orders</h1>
+
+@if (Model.Any())
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Order ID</th>
+                <th>Order Date</th>
+                <th>Total Items</th>
+                <th>Total Price</th>
+                <th>Details</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var order in Model)
+            {
+                var totalItems = order.OrderDetails.Sum(d => d.Quantity); // Handle nullable Quantity
+                var totalPrice = order.OrderDetails.Sum(d => (d.Quantity ) * (d.Price )); // Handle nullable Price
+
+                <tr>
+                    <td>@order.RowKey</td>
+                    <td>@order.OrderDate.ToString("dd MMM yyyy")</td>
+                    <td>@totalItems</td>
+                    <td>@totalPrice.ToString("C")</td> <!-- Correct handling of ToString("C") -->
+                    <td>
+                        <a asp-action="OrderDetails" asp-route-id="@order.RowKey">View Details</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>No processed orders found.</p>
+}
+ *@

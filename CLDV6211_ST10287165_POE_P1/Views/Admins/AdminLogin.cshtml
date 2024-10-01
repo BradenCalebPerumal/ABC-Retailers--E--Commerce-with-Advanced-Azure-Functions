@@ -1,0 +1,133 @@
+﻿@{
+    ViewData["Title"] = "Login";
+}
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<style>
+/*     body {
+        color: black;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        padding-top: 80px; /* Adjust padding to avoid overlap with fixed navbar */
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        overflow: hidden; /* Prevents scroll bars */
+        overflow-y: auto; /* Allows vertical scrolling */
+    } */
+
+    .login-container {
+        background: rgba(255, 255, 255, 1.0); /* Semi-transparent white background */
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 8px 16px rgba(0, 255, 255, 0.2); /* Neon effect */
+        width: 400px;
+        text-align: center;
+        border: 1px solid black; /* Neon border */
+        animation: glow 1.5s infinite alternate; /* Glow animation */
+        z-index: 10; /* Ensure it's on top */
+    }
+
+    keyframes glow {
+        0% {
+            box-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc, 0 0 30px #00ffcc;
+        }
+        100% {
+            box-shadow: 0 0 20px #00ffcc, 0 0 30px #00ffcc, 0 0 40px #00ffcc;
+        }
+    }
+
+    .login-title {
+        color: black; /* Neon green */
+        font-size: 24px;
+        margin-bottom: 20px;
+        text-shadow: 0 0 10px #00ffcc;
+    }
+
+    .login-intro {
+        text-align: left;
+        color: black;
+        margin-bottom: 20px;
+        text-shadow: 0 0 5px #00ffcc;
+    }
+
+    .form-group label {
+        display: block;
+        text-align: left;
+        color: black;
+        font-weight: bold;
+        margin-bottom: 5px;
+        text-shadow: 0 0 2px #00ffcc;
+    }
+
+    .form-control {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 2px solid #00ffcc; /* Neon border */
+        border-radius: 4px;
+        background-color: transparent;
+        color: black; /* Adjusted for readability */
+        transition: border 0.3s;
+    }
+
+    .form-control:focus {
+        border-color: #1affff; /* Lighter neon on focus */
+        outline: none;
+        box-shadow: 0 0 8px #00ffcc;
+    }
+
+    .btn-primary {
+        background-color: #00ffcc; /* Strong blue for the button */
+        border: none;
+        padding: 10px 20px;
+        color: black; /* Black text */
+        width: 100%; /* Button width */
+        border-radius: 4px;
+        cursor: pointer;
+        margin: 5px 0;
+        transition: all 0.3s ease; /* Smooth transition */
+    }
+
+    .btn-primary:hover {
+        background-color: blue; /* Lighter neon */
+        box-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc, 0 0 30px #00ffcc;
+    }
+
+    .btn-primary:active {
+        transform: translateY(2px); /* Press effect */
+    }
+
+    .signup-link {
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .signup-link a {
+        color: #3479c6; /* Vivid blue for the sign-up link */
+        text-decoration: none;
+    }
+</style>
+
+<div class="login-container">
+    <h2 class="login-title">Admin Login</h2>
+    <p class="login-intro">Please enter your details to continue to your account.</p>
+    <form asp-action="AdminLogin" method="post" class="login-form">
+        <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" name="email" class="form-control" id="email" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" name="password" class="form-control" id="password" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Log In</button>
+    </form>
+    @if (ViewBag.ShowSignupLink != null && ViewBag.ShowSignupLink)
+    {
+        <div class="signup-link">
+            <a href="@Url.Action("AdminSignUp", "Admins")">New here? Sign up</a>
+        </div>
+    }
+</div>

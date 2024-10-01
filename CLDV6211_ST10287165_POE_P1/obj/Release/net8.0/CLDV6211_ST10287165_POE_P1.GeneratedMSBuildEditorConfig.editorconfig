@@ -1,0 +1,387 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = CLDV6211_ST10287165_POE_P1
+build_property.RootNamespace = CLDV6211_ST10287165_POE_P1
+build_property.ProjectDir = C:\Users\Caleb\OneDrive - DLSSA\Documents\cldv6212-part-1-CalebPerumal28\POE P1-ST10287165\CLDV6211_ST10287165_POE_P1\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\Caleb\OneDrive - DLSSA\Documents\cldv6212-part-1-CalebPerumal28\POE P1-ST10287165\CLDV6211_ST10287165_POE_P1
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/Caleb/OneDrive - DLSSA/Documents/cldv6212-part-1-CalebPerumal28/POE P1-ST10287165/CLDV6211_ST10287165_POE_P1/Views/Admins/AdminDashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5zXEFkbWluRGFzaGJvYXJkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Caleb/OneDrive - DLSSA/Documents/cldv6212-part-1-CalebPerumal28/POE P1-ST10287165/CLDV6211_ST10287165_POE_P1/Views/Admins/AdminLogin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5zXEFkbWluTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Caleb/OneDrive - DLSSA/Documents/cldv6212-part-1-CalebPerumal28/POE P1-ST10287165/CLDV6211_ST10287165_POE_P1/Views/Admins/AdminSignUp.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5zXEFkbWluU2lnblVwLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Caleb/OneDrive - DLSSA/Documents/cldv6212-part-1-CalebPerumal28/POE P1-ST10287165/CLDV6211_ST10287165_POE_P1/Views/Admins/AllOrders.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5zXEFsbE9yZGVycy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Caleb/OneDrive - DLSSA/Documents/cldv6212-part-1-CalebPerumal28/POE P1-ST10287165/CLDV6211_ST10287165_POE_P1/Views/Admins/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5zXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Caleb/OneDrive - DLSSA/Documents/cldv6212-part-1-CalebPerumal28/POE P1-ST10287165/CLDV6211_ST10287165_POE_P1/Views/Admins/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5zXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Caleb/OneDrive - DLSSA/Documents/cldv6212-part-1-CalebPerumal28/POE P1-ST10287165/CLDV6211_ST10287165_POE_P1/Views/Admins/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5zXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Caleb/OneDrive - DLSSA/Documents/cldv6212-part-1-CalebPerumal28/POE P1-ST10287165/CLDV6211_ST10287165_POE_P1/Views/Admins/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5zXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Caleb/OneDrive - DLSSA/Documents/cldv6212-part-1-CalebPerumal28/POE P1-ST10287165/CLDV6211_ST10287165_POE_P1/Views/Admins/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5zXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Caleb/OneDrive - DLSSA/Documents/cldv6212-part-1-CalebPerumal28/POE P1-ST10287165/CLDV6211_ST10287165_POE_P1/Views/Admins/NewAdmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5zXE5ld0FkbWluLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Caleb/OneDrive - DLSSA/Documents/cldv6212-part-1-CalebPerumal28/POE P1-ST10287165/CLDV6211_ST10287165_POE_P1/Views/Admins/Profile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5zXFByb2ZpbGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Caleb/OneDrive - DLSSA/Documents/cldv6212-part-1-CalebPerumal28/POE P1-ST10287165/CLDV6211_ST10287165_POE_P1/Views/CartItems/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydEl0ZW1zXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Caleb/OneDrive - DLSSA/Documents/cldv6212-part-1-CalebPerumal28/POE P1-ST10287165/CLDV6211_ST10287165_POE_P1/Views/CartItems/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydEl0ZW1zXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Caleb/OneDrive - DLSSA/Documents/cldv6212-part-1-CalebPerumal28/POE P1-ST10287165/CLDV6211_ST10287165_POE_P1/Views/CartItems/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydEl0ZW1zXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Caleb/OneDrive - DLSSA/Documents/cldv6212-part-1-CalebPerumal28/POE P1-ST10287165/CLDV6211_ST10287165_POE_P1/Views/CartItems/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydEl0ZW1zXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Caleb/OneDrive - DLSSA/Documents/cldv6212-part-1-CalebPerumal28/POE P1-ST10287165/CLDV6211_ST10287165_POE_P1/Views/CartItems/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydEl0ZW1zXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Caleb/OneDrive - DLSSA/Documents/cldv6212-part-1-CalebPerumal28/POE P1-ST10287165/CLDV6211_ST10287165_POE_P1/Views/Cart/CartView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxDYXJ0Vmlldy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Caleb/OneDrive - DLSSA/Documents/cldv6212-part-1-CalebPerumal28/POE P1-ST10287165/CLDV6211_ST10287165_POE_P1/Views/CheckoutViewModels/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hlY2tvdXRWaWV3TW9kZWxzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Caleb/OneDrive - DLSSA/Documents/cldv6212-part-1-CalebPerumal28/POE P1-ST10287165/CLDV6211_ST10287165_POE_P1/Views/CheckoutViewModels/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hlY2tvdXRWaWV3TW9kZWxzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Caleb/OneDrive - DLSSA/Documents/cldv6212-part-1-CalebPerumal28/POE P1-ST10287165/CLDV6211_ST10287165_POE_P1/Views/CheckoutViewModels/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hlY2tvdXRWaWV3TW9kZWxzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Caleb/OneDrive - DLSSA/Documents/cldv6212-part-1-CalebPerumal28/POE P1-ST10287165/CLDV6211_ST10287165_POE_P1/Views/CheckoutViewModels/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hlY2tvdXRWaWV3TW9kZWxzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Caleb/OneDrive - DLSSA/Documents/cldv6212-part-1-CalebPerumal28/POE P1-ST10287165/CLDV6211_ST10287165_POE_P1/Views/CheckoutViewModels/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hlY2tvdXRWaWV3TW9kZWxzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Caleb/OneDrive - DLSSA/Documents/cldv6212-part-1-CalebPerumal28/POE P1-ST10287165/CLDV6211_ST10287165_POE_P1/Views/CheckoutViewModels/SubmitOrder.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hlY2tvdXRWaWV3TW9kZWxzXFN1Ym1pdE9yZGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Caleb/OneDrive - DLSSA/Documents/cldv6212-part-1-CalebPerumal28/POE P1-ST10287165/CLDV6211_ST10287165_POE_P1/Views/Clients/ClientDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50c1xDbGllbnREZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Caleb/OneDrive - DLSSA/Documents/cldv6212-part-1-CalebPerumal28/POE P1-ST10287165/CLDV6211_ST10287165_POE_P1/Views/Clients/ClientOrders.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50c1xDbGllbnRPcmRlcnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Caleb/OneDrive - DLSSA/Documents/cldv6212-part-1-CalebPerumal28/POE P1-ST10287165/CLDV6211_ST10287165_POE_P1/Views/Clients/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50c1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Caleb/OneDrive - DLSSA/Documents/cldv6212-part-1-CalebPerumal28/POE P1-ST10287165/CLDV6211_ST10287165_POE_P1/Views/Clients/CustOrder.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50c1xDdXN0T3JkZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Caleb/OneDrive - DLSSA/Documents/cldv6212-part-1-CalebPerumal28/POE P1-ST10287165/CLDV6211_ST10287165_POE_P1/Views/Clients/Dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50c1xEYXNoYm9hcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Caleb/OneDrive - DLSSA/Documents/cldv6212-part-1-CalebPerumal28/POE P1-ST10287165/CLDV6211_ST10287165_POE_P1/Views/Clients/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50c1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Caleb/OneDrive - DLSSA/Documents/cldv6212-part-1-CalebPerumal28/POE P1-ST10287165/CLDV6211_ST10287165_POE_P1/Views/Clients/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50c1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Caleb/OneDrive - DLSSA/Documents/cldv6212-part-1-CalebPerumal28/POE P1-ST10287165/CLDV6211_ST10287165_POE_P1/Views/Clients/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50c1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Caleb/OneDrive - DLSSA/Documents/cldv6212-part-1-CalebPerumal28/POE P1-ST10287165/CLDV6211_ST10287165_POE_P1/Views/Clients/EditOrder.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50c1xFZGl0T3JkZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Caleb/OneDrive - DLSSA/Documents/cldv6212-part-1-CalebPerumal28/POE P1-ST10287165/CLDV6211_ST10287165_POE_P1/Views/Clients/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50c1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Caleb/OneDrive - DLSSA/Documents/cldv6212-part-1-CalebPerumal28/POE P1-ST10287165/CLDV6211_ST10287165_POE_P1/Views/Clients/ListedProducts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50c1xMaXN0ZWRQcm9kdWN0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Caleb/OneDrive - DLSSA/Documents/cldv6212-part-1-CalebPerumal28/POE P1-ST10287165/CLDV6211_ST10287165_POE_P1/Views/Clients/Loginn.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50c1xMb2dpbm4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Caleb/OneDrive - DLSSA/Documents/cldv6212-part-1-CalebPerumal28/POE P1-ST10287165/CLDV6211_ST10287165_POE_P1/Views/Clients/SIgnUp.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50c1xTSWduVXAuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Caleb/OneDrive - DLSSA/Documents/cldv6212-part-1-CalebPerumal28/POE P1-ST10287165/CLDV6211_ST10287165_POE_P1/Views/Customers/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Caleb/OneDrive - DLSSA/Documents/cldv6212-part-1-CalebPerumal28/POE P1-ST10287165/CLDV6211_ST10287165_POE_P1/Views/Customers/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Caleb/OneDrive - DLSSA/Documents/cldv6212-part-1-CalebPerumal28/POE P1-ST10287165/CLDV6211_ST10287165_POE_P1/Views/Customers/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Caleb/OneDrive - DLSSA/Documents/cldv6212-part-1-CalebPerumal28/POE P1-ST10287165/CLDV6211_ST10287165_POE_P1/Views/Customers/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Caleb/OneDrive - DLSSA/Documents/cldv6212-part-1-CalebPerumal28/POE P1-ST10287165/CLDV6211_ST10287165_POE_P1/Views/Customers/History.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJzXEhpc3RvcnkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Caleb/OneDrive - DLSSA/Documents/cldv6212-part-1-CalebPerumal28/POE P1-ST10287165/CLDV6211_ST10287165_POE_P1/Views/Customers/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Caleb/OneDrive - DLSSA/Documents/cldv6212-part-1-CalebPerumal28/POE P1-ST10287165/CLDV6211_ST10287165_POE_P1/Views/Customers/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJzXExvZ2luLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Caleb/OneDrive - DLSSA/Documents/cldv6212-part-1-CalebPerumal28/POE P1-ST10287165/CLDV6211_ST10287165_POE_P1/Views/Customers/SignUp.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJzXFNpZ25VcC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Caleb/OneDrive - DLSSA/Documents/cldv6212-part-1-CalebPerumal28/POE P1-ST10287165/CLDV6211_ST10287165_POE_P1/Views/Customers/ViewProcessedOrders.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJzXFZpZXdQcm9jZXNzZWRPcmRlcnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Caleb/OneDrive - DLSSA/Documents/cldv6212-part-1-CalebPerumal28/POE P1-ST10287165/CLDV6211_ST10287165_POE_P1/Views/Customers/_OrderDetailsModal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJzXF9PcmRlckRldGFpbHNNb2RhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Caleb/OneDrive - DLSSA/Documents/cldv6212-part-1-CalebPerumal28/POE P1-ST10287165/CLDV6211_ST10287165_POE_P1/Views/Home/AboutUs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBYm91dFVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Caleb/OneDrive - DLSSA/Documents/cldv6212-part-1-CalebPerumal28/POE P1-ST10287165/CLDV6211_ST10287165_POE_P1/Views/Home/ContactUs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb250YWN0VXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Caleb/OneDrive - DLSSA/Documents/cldv6212-part-1-CalebPerumal28/POE P1-ST10287165/CLDV6211_ST10287165_POE_P1/Views/Home/FAQ.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxGQVEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Caleb/OneDrive - DLSSA/Documents/cldv6212-part-1-CalebPerumal28/POE P1-ST10287165/CLDV6211_ST10287165_POE_P1/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Caleb/OneDrive - DLSSA/Documents/cldv6212-part-1-CalebPerumal28/POE P1-ST10287165/CLDV6211_ST10287165_POE_P1/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Caleb/OneDrive - DLSSA/Documents/cldv6212-part-1-CalebPerumal28/POE P1-ST10287165/CLDV6211_ST10287165_POE_P1/Views/Home/TermsOfUse.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxUZXJtc09mVXNlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Caleb/OneDrive - DLSSA/Documents/cldv6212-part-1-CalebPerumal28/POE P1-ST10287165/CLDV6211_ST10287165_POE_P1/Views/OrderDetails/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJEZXRhaWxzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Caleb/OneDrive - DLSSA/Documents/cldv6212-part-1-CalebPerumal28/POE P1-ST10287165/CLDV6211_ST10287165_POE_P1/Views/OrderDetails/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJEZXRhaWxzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Caleb/OneDrive - DLSSA/Documents/cldv6212-part-1-CalebPerumal28/POE P1-ST10287165/CLDV6211_ST10287165_POE_P1/Views/OrderDetails/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJEZXRhaWxzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Caleb/OneDrive - DLSSA/Documents/cldv6212-part-1-CalebPerumal28/POE P1-ST10287165/CLDV6211_ST10287165_POE_P1/Views/OrderDetails/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJEZXRhaWxzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Caleb/OneDrive - DLSSA/Documents/cldv6212-part-1-CalebPerumal28/POE P1-ST10287165/CLDV6211_ST10287165_POE_P1/Views/OrderDetails/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJEZXRhaWxzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Caleb/OneDrive - DLSSA/Documents/cldv6212-part-1-CalebPerumal28/POE P1-ST10287165/CLDV6211_ST10287165_POE_P1/Views/Order/a.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcYS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Caleb/OneDrive - DLSSA/Documents/cldv6212-part-1-CalebPerumal28/POE P1-ST10287165/CLDV6211_ST10287165_POE_P1/Views/Order/AllOrders.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcQWxsT3JkZXJzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Caleb/OneDrive - DLSSA/Documents/cldv6212-part-1-CalebPerumal28/POE P1-ST10287165/CLDV6211_ST10287165_POE_P1/Views/Order/Checkout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcQ2hlY2tvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Caleb/OneDrive - DLSSA/Documents/cldv6212-part-1-CalebPerumal28/POE P1-ST10287165/CLDV6211_ST10287165_POE_P1/Views/Order/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Caleb/OneDrive - DLSSA/Documents/cldv6212-part-1-CalebPerumal28/POE P1-ST10287165/CLDV6211_ST10287165_POE_P1/Views/Order/CustOrders.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcQ3VzdE9yZGVycy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Caleb/OneDrive - DLSSA/Documents/cldv6212-part-1-CalebPerumal28/POE P1-ST10287165/CLDV6211_ST10287165_POE_P1/Views/Order/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Caleb/OneDrive - DLSSA/Documents/cldv6212-part-1-CalebPerumal28/POE P1-ST10287165/CLDV6211_ST10287165_POE_P1/Views/Order/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Caleb/OneDrive - DLSSA/Documents/cldv6212-part-1-CalebPerumal28/POE P1-ST10287165/CLDV6211_ST10287165_POE_P1/Views/Order/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Caleb/OneDrive - DLSSA/Documents/cldv6212-part-1-CalebPerumal28/POE P1-ST10287165/CLDV6211_ST10287165_POE_P1/Views/Order/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Caleb/OneDrive - DLSSA/Documents/cldv6212-part-1-CalebPerumal28/POE P1-ST10287165/CLDV6211_ST10287165_POE_P1/Views/Order/OrderConfirmation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcT3JkZXJDb25maXJtYXRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Caleb/OneDrive - DLSSA/Documents/cldv6212-part-1-CalebPerumal28/POE P1-ST10287165/CLDV6211_ST10287165_POE_P1/Views/Products/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Caleb/OneDrive - DLSSA/Documents/cldv6212-part-1-CalebPerumal28/POE P1-ST10287165/CLDV6211_ST10287165_POE_P1/Views/Products/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Caleb/OneDrive - DLSSA/Documents/cldv6212-part-1-CalebPerumal28/POE P1-ST10287165/CLDV6211_ST10287165_POE_P1/Views/Products/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Caleb/OneDrive - DLSSA/Documents/cldv6212-part-1-CalebPerumal28/POE P1-ST10287165/CLDV6211_ST10287165_POE_P1/Views/Products/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Caleb/OneDrive - DLSSA/Documents/cldv6212-part-1-CalebPerumal28/POE P1-ST10287165/CLDV6211_ST10287165_POE_P1/Views/Products/EditDisplay.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcRWRpdERpc3BsYXkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Caleb/OneDrive - DLSSA/Documents/cldv6212-part-1-CalebPerumal28/POE P1-ST10287165/CLDV6211_ST10287165_POE_P1/Views/Products/EditProduct.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcRWRpdFByb2R1Y3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Caleb/OneDrive - DLSSA/Documents/cldv6212-part-1-CalebPerumal28/POE P1-ST10287165/CLDV6211_ST10287165_POE_P1/Views/Products/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Caleb/OneDrive - DLSSA/Documents/cldv6212-part-1-CalebPerumal28/POE P1-ST10287165/CLDV6211_ST10287165_POE_P1/Views/Products/_PartialProductDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcX1BhcnRpYWxQcm9kdWN0RGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Caleb/OneDrive - DLSSA/Documents/cldv6212-part-1-CalebPerumal28/POE P1-ST10287165/CLDV6211_ST10287165_POE_P1/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Caleb/OneDrive - DLSSA/Documents/cldv6212-part-1-CalebPerumal28/POE P1-ST10287165/CLDV6211_ST10287165_POE_P1/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Caleb/OneDrive - DLSSA/Documents/cldv6212-part-1-CalebPerumal28/POE P1-ST10287165/CLDV6211_ST10287165_POE_P1/Views/Users1/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnMxXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Caleb/OneDrive - DLSSA/Documents/cldv6212-part-1-CalebPerumal28/POE P1-ST10287165/CLDV6211_ST10287165_POE_P1/Views/Users1/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnMxXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Caleb/OneDrive - DLSSA/Documents/cldv6212-part-1-CalebPerumal28/POE P1-ST10287165/CLDV6211_ST10287165_POE_P1/Views/Users1/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnMxXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Caleb/OneDrive - DLSSA/Documents/cldv6212-part-1-CalebPerumal28/POE P1-ST10287165/CLDV6211_ST10287165_POE_P1/Views/Users1/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnMxXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Caleb/OneDrive - DLSSA/Documents/cldv6212-part-1-CalebPerumal28/POE P1-ST10287165/CLDV6211_ST10287165_POE_P1/Views/Users1/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnMxXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Caleb/OneDrive - DLSSA/Documents/cldv6212-part-1-CalebPerumal28/POE P1-ST10287165/CLDV6211_ST10287165_POE_P1/Views/Users/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Caleb/OneDrive - DLSSA/Documents/cldv6212-part-1-CalebPerumal28/POE P1-ST10287165/CLDV6211_ST10287165_POE_P1/Views/Users/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Caleb/OneDrive - DLSSA/Documents/cldv6212-part-1-CalebPerumal28/POE P1-ST10287165/CLDV6211_ST10287165_POE_P1/Views/Users/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Caleb/OneDrive - DLSSA/Documents/cldv6212-part-1-CalebPerumal28/POE P1-ST10287165/CLDV6211_ST10287165_POE_P1/Views/Users/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Caleb/OneDrive - DLSSA/Documents/cldv6212-part-1-CalebPerumal28/POE P1-ST10287165/CLDV6211_ST10287165_POE_P1/Views/Users/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Caleb/OneDrive - DLSSA/Documents/cldv6212-part-1-CalebPerumal28/POE P1-ST10287165/CLDV6211_ST10287165_POE_P1/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Caleb/OneDrive - DLSSA/Documents/cldv6212-part-1-CalebPerumal28/POE P1-ST10287165/CLDV6211_ST10287165_POE_P1/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Caleb/OneDrive - DLSSA/Documents/cldv6212-part-1-CalebPerumal28/POE P1-ST10287165/CLDV6211_ST10287165_POE_P1/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-3zaaekcnsd

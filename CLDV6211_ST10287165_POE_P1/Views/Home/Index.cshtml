@@ -1,0 +1,346 @@
+﻿@{
+    ViewData["Title"] = "Home";
+}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to ABC Retailers</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .carousel-item img {
+            height: 500px;
+            object-fit: cover;
+            width: 100%;
+        }
+
+        .image-container {
+            position: relative;
+            display: block;
+            width: 100%;
+            max-height: 500px;
+            overflow: hidden;
+        }
+
+        .shop-now-button {
+            position: absolute;
+            bottom: 10%;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: blue;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+        }
+
+            .shop-now-button:hover {
+                background-color: darkblue;
+            }
+
+        .testimonials-container {
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: center; /* Center align the content */
+        }
+
+        .testimonial {
+            display: inline-block;
+            vertical-align: top;
+            width: 30%; /* Assuming three testimonials in a row */
+            margin: 0 1.5%; /* Spacing between testimonials */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow for styling */
+            padding: 10px;
+            padding: 10px;
+            height: auto;
+            box-sizing: border-box;
+            background: #fff; /* Background color */
+        }
+
+        /* Adjusts the title of the testimonials section */
+        h4 {
+            color: #333;
+            text-transform: uppercase;
+            font-size: 22px;
+            margin-bottom: 20px;
+        }
+
+        .testimonials-section .testimonial:before {
+            content: open-quote;
+            font-size: 50px;
+            color: lightgray;
+            line-height: 0;
+            margin-right: 10px;
+            vertical-align: -20px;
+        }
+
+        .testimonials-section .testimonial-content {
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .testimonials-section .testimonials-container {
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .testimonials-section .testimonial {
+            flex: 1 1 30%;
+            margin: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+            background: #fff;
+            max-width: 350px;
+        }
+
+            .testimonials-section .testimonial p {
+                font-style: italic;
+                color: #555;
+                padding: 0 20px;
+            }
+
+        .testimonials-section .testimonial-author {
+            font-weight: bold;
+            color: #333;
+            font-size: 16px;
+            margin-top: 15px;
+        }
+
+        .testimonials-section .testimonial-rating {
+            color: #f5a623;
+            font-size: 18px;
+            margin-top: 5px;
+        }
+
+        .testimonials-section .dot-container {
+            text-align: center;
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .testimonials-section .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 5px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+            .testimonials-section .active-dot,
+            .testimonials-section .dot:hover {
+                background-color: #717171;
+            }
+
+
+        /* Custom style for h1 */
+        h1 {
+            color: #1a1a1a; /* Change the color to suit your theme */
+            text-shadow: 0 0 5px #00ffcc; /* Glowing effect */
+        }
+
+        .customer-reviews-heading {
+            text-align: center;
+            /* Other styles specifically for the customer reviews heading */
+        }
+
+        .custom-login-btn {
+            background-color: #00ffcc; /* Example: green color */
+            color: black; /* White text color */
+            border: none; /* Remove default border */
+        }
+
+            .custom-login-btn:hover {
+                background-color: darkturquoise; /* Darker green for hover effect */
+                color: black; /* Keep text white */
+            }
+
+        .custom-close {
+            background-color: red; /* Example: green color */
+            color: black; /* White text color */
+            border: none; /* Remove default border */
+        }
+
+        .modal-title {
+            color: #1a1a1a; /* Change the color to suit your theme */
+            text-shadow: 0 0 5px #00ffcc; /* Glowing effect */
+            padding-left: 170px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1>Welcome to ABC Retailers</h1>
+    <hr style="height: 2px; background-color: #000; border: none;">
+    <h4>Empowering Your Digital World</h4>
+
+    <!-- Bootstrap Carousel -->
+    <div id="promoCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2500">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="~/images/buds3pro-mlp-hero-buds3pro-kv-lo.png" class="d-block w-100" alt="Craft Image">
+
+            </div>
+            <div class="carousel-item">
+
+                <img src="~/images/samsung_dotcom_q6b6-estore_pre-o.png" class="d-block w-100" alt="Second Promo">
+
+            </div>
+            <div class="carousel-item">
+
+                <img src="~/images/galaxy-ring-kv-endframe-pc.png" class="d-block w-100" alt="Third Promo">
+            </div>
+            <div class="carousel-item">
+
+                <img src="~/images/samsung-ai-ecobubble-front-load.png" class="d-block w-100" alt="Fouth Promo">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#promoCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#promoCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <p>
+        ABC Retailers is your go-to online destination for cutting-edge technology and gadgets. We offer a wide range of high-quality devices from top global manufacturers, ensuring you access to the latest in smartphones, smart home devices, computing, and audio systems. Whether you're a tech enthusiast or a professional, ABC Retailers makes it easy to find state-of-the-art solutions that enhance your lifestyle and productivity. Dive into our tech-driven world and explore the possibilities that await.
+    </p>
+    <div class="testimonials-section">
+        <h4 class="customer-reviews-heading">Customer Reviews</h4>
+        <div class="testimonials-container">
+            <div class="testimonial active">
+                <p>"I recently discovered ABC Retailers when I was on the lookout for the latest tech gadgets, and I'm absolutely impressed! Their selection is top-notch, featuring the latest in tech trends and innovations. I will definitely recommend this online store for anyone passionate about technology!"</p>
+                <div class="testimonial-author">JOHN SMITH</div>
+                <div class="testimonial-rating">★★★★★</div>
+            </div>
+            <div class="testimonial active">
+                <p>"As a tech enthusiast, I'm always on the hunt for the next big thing in technology. ABC Retailers has consistently impressed me with their broad range of cutting-edge electronics and gadgets. The quality of their products is exceptional, and it's exciting to see such a global array of options."</p>
+                <div class="testimonial-author">EMILY JOHNSON</div>
+                <div class="testimonial-rating">★★★★★</div>
+            </div>
+            <div class="testimonial active">
+                <p>"I recently upgraded my home office and was in search of the latest tech to enhance my workspace. ABC Retailers was the perfect choice! Their selection of modern gadgets and tech accessories is unparalleled. The customer service was top-notch, and my items were delivered swiftly."</p>
+                <div class="testimonial-author">MICHAEL BROWN</div>
+                <div class="testimonial-rating">★★★★★</div>
+            </div>
+            <div class="testimonial active">
+                <p>"ABC Retailers is my go-to destination for the latest gadgets and tech gifts for friends and family. I've made several purchases from their website and have been thrilled with the quality and innovation of their products. It's rewarding to shop at a store that always has the newest and best tech available."</p>
+                <div class="testimonial-author">SARAH RODRIGUE</div>
+                <div class="testimonial-rating">★★★★★</div>
+            </div>
+            <div class="testimonial active">
+                <p>"I'm constantly impressed by the variety of cutting-edge technology available at ABC Retailers. I highly recommend ABC Retailers to anyone looking for high-quality gadgets. Their global reach and swift delivery services make them a top choice for tech enthusiasts around the world."</p>
+                <div class="testimonial-author">DAVID WILSON</div>
+                <div class="testimonial-rating">★★★★★</div>
+            </div>
+
+        </div>
+
+        <div class="dot-container">
+            <!-- Dots will be generated by JavaScript -->
+        </div>
+
+        <!-- Basic Modal -->
+        <div class="modal fade" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="basicModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="basicModalLabel">Welcome!</h5>
+                        <button type="button" id="modal-btn-cls" class="close custom-close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <p>Would you like to log in or create an account?</p>
+
+                        <a href="@Url.Action("Login", "Customers")" class="btn btn-primary custom-login-btn">Login</a>
+                        <a href="@Url.Action("SignUp", "Customers")" class="btn btn-secondary">Create an Account</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        @section Scripts {
+            <script>
+                // Directly inject the session check result into JavaScript
+                var isLoggedIn = @Html.Raw(Context.Session.GetString("isLoggedIn") == "true" ? "true" : "false");
+
+                $(document).ready(function () {
+                    if (!isLoggedIn) {
+                        $("#basicModal").modal('show');
+                    }
+
+                    $(".custom-close").click(function () {
+                        $("#basicModal").modal('hide');
+                    });
+                });
+
+
+
+                // When the document is ready
+                $(document).ready(function () {
+                    var testimonialsPerSlide = 3;
+                    var totalTestimonials = $('.testimonial').length;
+                    var totalDots = Math.ceil(totalTestimonials / testimonialsPerSlide);
+
+                    // Function to handle the slide change
+                    function changeSlide(index) {
+                        var startIndex = index * testimonialsPerSlide;
+                        var endIndex = startIndex + testimonialsPerSlide;
+                        $('.testimonial').hide().slice(startIndex, endIndex).show();
+                        $('.dot').removeClass('active-dot').eq(index).addClass('active-dot');
+                    }
+
+                    // Initialize the testimonials
+                    changeSlide(0);
+
+                    // Create the dots
+                    for (var i = 0; i < totalDots; i++) {
+                        var dot = $('<span>').addClass('dot').on('click', function () {
+                            changeSlide($(this).index());
+                        });
+                        if (i === 0) dot.addClass('active-dot');
+                        $('.dot-container').append(dot);
+                    }
+
+                    // Expose the changeSlide function to global scope
+                    window.currentSlide = changeSlide;
+                });
+
+
+
+
+
+            </script>
+        }
+
+</body>
+</html>
+
+
+

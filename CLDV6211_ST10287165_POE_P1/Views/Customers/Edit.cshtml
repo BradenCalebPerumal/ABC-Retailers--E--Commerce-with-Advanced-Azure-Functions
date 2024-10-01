@@ -1,0 +1,85 @@
+﻿@model CLDV6211_ST10287165_POE_P1.Models.Customer
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h2>Edit Customer</h2>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit" id="editCustomerForm">
+            <input type="hidden" asp-for="RowKey" />
+            <input type="hidden" asp-for="PartitionKey" />
+            <input type="hidden" asp-for="CustPasswordHash" />
+
+            <div class="form-group">
+                <label asp-for="CustEmail"></label>
+                <input asp-for="CustEmail" class="form-control" readonly /> <!-- Email is readonly -->
+            </div>
+            <div class="form-group">
+                <label asp-for="CustPassword"></label>
+                <input asp-for="CustPassword" class="form-control" type="password" id="password" placeholder="••••••" />
+            </div>
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" id="confirmPassword" class="form-control" placeholder="••••••" />
+            </div>
+            <button type="submit" class="btn btn-primary" id="saveChangesButton" disabled>Save Changes</button>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const passwordField = document.getElementById('password');
+            const confirmPasswordField = document.getElementById('confirmPassword');
+            const saveButton = document.getElementById('saveChangesButton');
+
+            function validatePasswords() {
+                const password = passwordField.value;
+                const confirmPassword = confirmPasswordField.value;
+
+                if (password === confirmPassword && password !== "") {
+                    passwordField.classList.add('is-valid');
+                    confirmPasswordField.classList.add('is-valid');
+                    passwordField.classList.remove('is-invalid');
+                    confirmPasswordField.classList.remove('is-invalid');
+                    saveButton.disabled = false;
+                } else {
+                    passwordField.classList.add('is-invalid');
+                    confirmPasswordField.classList.add('is-invalid');
+                    passwordField.classList.remove('is-valid');
+                    confirmPasswordField.classList.remove('is-valid');
+                    saveButton.disabled = true;
+                }
+            }
+
+            function brieflyShowPassword(field) {
+                field.type = 'text';
+                setTimeout(() => {
+                    field.type = 'password';
+                }, 500); // Show the password for 500ms (half a second)
+            }
+
+            passwordField.addEventListener('input', function () {
+                brieflyShowPassword(passwordField);
+                validatePasswords();
+            });
+
+            confirmPasswordField.addEventListener('input', function () {
+                brieflyShowPassword(confirmPasswordField);
+                validatePasswords();
+            });
+        });
+    </script>
+}
