@@ -28,7 +28,7 @@
 - 🧩 Plugins  
 - 🙌 Credits  
 - 🌐 GitHub Link  
-- 🎥 Demonstration Video Link  
+- 🎥 Screenshots 
 - 🔑 Admin Login Credentials  
 - 📚 References  
 
@@ -198,8 +198,76 @@ https://github.com/YourUsername/abc-retailers-part2-3
 
 ---
 
-## 15) Demonstration Video Link
-[Demo Video Placeholder](https://example.com/demo-video)
+## 15)  📸 Screenshots
+
+### 🏠 Home Page & 🛍️ Product Catalog
+<p align="center">
+  <div align="center">
+    <p><strong>🏠 Home Page</strong></p>
+    <img src="Screenshots/Home.png" alt="Home Page" width="400"/>
+  </div>
+  <div align="center">
+    <p><strong>🛍️ Product Catalog</strong></p>
+    <img src="Screenshots/Catalog.png" alt="Product Catalog" width="400"/>
+  </div>
+</p>
+
+### ➕ Add Product & 🛡️ Admin Sign-Up
+<p align="center">
+  <div align="center">
+    <p><strong>➕ Add Product</strong></p>
+    <img src="Screenshots/AddProduct.png" alt="Add Product" width="400"/>
+  </div>
+  <div align="center">
+    <p><strong>🛡️ Admin Sign-Up</strong></p>
+    <img src="Screenshots/AdminSignUp.png" alt="Admin Sign-Up" width="400"/>
+  </div>
+</p>
+
+### 👤 Client Sign-Up & 👤 Customer Sign-Up
+<p align="center">
+  <div align="center">
+    <p><strong>👤 Client Sign-Up</strong></p>
+    <img src="Screenshots/ClientSignUp.png" alt="Client Sign-Up" width="400"/>
+  </div>
+  <div align="center">
+    <p><strong>👤 Customer Sign-Up</strong></p>
+    <img src="Screenshots/CustSignUp.png" alt="Customer Sign-Up" width="400"/>
+  </div>
+</p>
+
+### 🛒 Cart & 💳 Checkout
+<p align="center">
+  <div align="center">
+    <p><strong>🛒 Shopping Cart</strong></p>
+    <img src="Screenshots/cart.png" alt="Shopping Cart" width="400"/>
+  </div>
+  <div align="center">
+    <p><strong>💳 Checkout</strong></p>
+    <img src="Screenshots/checkout.png" alt="Checkout" width="400"/>
+  </div>
+</p>
+
+### ✅ Order Confirmation & 📦 Order Details
+<p align="center">
+  <div align="center">
+    <p><strong>✅ Order Confirmation</strong></p>
+    <img src="Screenshots/orderconfirm.png" alt="Order Confirmation" width="400"/>
+  </div>
+  <div align="center">
+    <p><strong>📦 Order Details</strong></p>
+    <img src="Screenshots/order.png" alt="Order Details" width="400"/>
+  </div>
+</p>
+
+### ☁️ Hosted Deployment View
+<p align="center">
+  <div align="center">
+    <p><strong>☁️ Hosted Deployment View</strong></p>
+    <img src="Screenshots/hosted.png" alt="Hosted View" width="500"/>
+  </div>
+</p>
+
 
 ---
 
