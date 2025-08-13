@@ -189,12 +189,12 @@ ABC Retailers is licensed under the MIT License. You are free to use, modify, an
 ---
 
 ## 13) Credits
-This project was created and maintained by **Braden Caleb Perumal (ST10287165)**.
-
+ 👨‍💻 Braden Caleb Perumal (ST10287165)  
+  📧 **Email:** [calebperumal28@gmail.com](mailto:calebperumal28@gmail.com)
 ---
 
 ## 14) GitHub Link
-https://github.com/YourUsername/abc-retailers-part2-3
+- 📂 [GitHub Repository](https://github.com/BradenCalebPerumal/ABC-Retailers--E--Commerce-with-Advanced-Azure-Functions.git)  
 
 ---
 
