@@ -41,17 +41,14 @@ The system now supports **file uploads to Azure Blob Storage**, **automated proc
 - Azure Subscription (Blob Storage, Functions, Table Storage)  
 - Git (version control)  
 
-### Sample `appsettings.json` Configuration:
+### 🛠 Sample `appsettings.json` Configuration:
 ```json
 {
   "ConnectionStrings": {
-    "DefaultConnection": "Server=YOUR_SERVER;Database=ABCRetailersDb;Trusted_Connection=True;"
+    "CLDV6211_ST10287165_POE_P1Context": "Server=YOUR_SERVER;Database=ABCRetailersDb;Trusted_Connection=True;MultipleActiveResultSets=true",
+    "AzureStorage": "DefaultEndpointsProtocol=https;AccountName=YOUR_ACCOUNT;AccountKey=YOUR_KEY;EndpointSuffix=core.windows.net"
   },
-  "AzureStorage": {
-    "BlobConnectionString": "DefaultEndpointsProtocol=https;AccountName=YOUR_ACCOUNT;AccountKey=YOUR_KEY;EndpointSuffix=core.windows.net",
-    "FileShareName": "products",
-    "ContainerName": "product-images"
-  },
+  "FunctionUrl": "https://YOUR_FUNCTION_APP.azurewebsites.net/api/",
   "Logging": {
     "LogLevel": {
       "Default": "Information",
@@ -60,7 +57,14 @@ The system now supports **file uploads to Azure Blob Storage**, **automated proc
   },
   "AllowedHosts": "*"
 }
+
 ```
+> ⚠ **Important Setup Instructions**  
+> 
+> 1. 📤 **Publish your Azure Function** to your Azure Subscription.  
+> 2. 🔗 **Copy the Function URL** from the Azure Portal and set it in the `"FunctionUrl"` field in `appsettings.json`.  
+> 3. 🔐 **Replace `"AzureStorage"`** with your actual Azure Storage connection string (AccountName + AccountKey).  
+> 4. 🚫 **Do not commit real keys to GitHub** — store them in a local `.env` file or in **Azure App Service Configuration Settings** for production.
 
 ---
 
