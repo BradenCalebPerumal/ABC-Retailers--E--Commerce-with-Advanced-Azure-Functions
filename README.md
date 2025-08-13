@@ -1,6 +1,13 @@
 
-# 💻 ABC Retailers – Part 2 Azure Functions
+<div align="center">
 
+<h1>🛠️☁️ ABC Retailers – Part 2 Azure Functions ☁️🛠️</h1>
+
+<h2><img src="https://readme-typing-svg.herokuapp.com?font=Russo+One&size=28&duration=3000&pause=1000&color=0078D4&center=true&vCenter=true&width=1000&lines=☁️+Cloud+Powered+Retail+Automation;⚙️+ASP.NET+Core+MVC+%26+Azure+Functions;👨‍💻+Developed+by+Braden+Caleb+Perumal" alt="Typing SVG" /></h2>
+
+</div>
+
+---
 **👤 Name:** Braden Caleb Perumal  
 **🎓 Student Number:** ST10287165  
 
